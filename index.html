@@ -1,0 +1,1000 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src data: blob:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'; frame-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<title>Madinah Viability Compass · Creed-to-Commerce™</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style id="css">
+:root{
+  --bg:#f6f2e8;--surface:#fffdf8;--surface2:#f1ecdd;--ink:#18271f;--ink2:#40524a;--muted:#667569;--line:#ddd5bf;
+  --g9:#0b3d2e;--g7:#146c43;--g5:#2e9e6b;--gold:#b8892b;--gold2:#e2bf62;--danger:#b3261e;
+  --b-fail:#c23b32;--b-high:#df7425;--b-fragile:#d4a017;--b-sust:#6f9f3a;--b-thrive:#14855a;
+  --c1:#2f6fb0;--c2:#b8892b;--c3:#1f8f5f;--c4:#8a4fb3;--c5:#d0554a;
+  --c-base:#0b3d2e;--c-down:#c2561b;--c-up:#2f6fb0;--neg:rgba(194,59,50,.08);
+  --shadow:0 1px 2px rgba(24,39,31,.06),0 8px 24px rgba(24,39,31,.07);
+  --r:14px;--font:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;--serif:'Amiri','Iowan Old Style',Georgia,serif;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0c1511;--surface:#13201a;--surface2:#1a2b23;--ink:#eef3ee;--ink2:#c5d2c9;--muted:#95a79b;--line:#2b4136;
+  --g9:#a9dcc2;--g7:#49b98a;--g5:#49b98a;--gold:#e0b659;--gold2:#e0b659;--danger:#ff8a80;
+  --b-fail:#ef6a60;--b-high:#f09047;--b-fragile:#e6b73a;--b-sust:#93c35a;--b-thrive:#3fc08a;
+  --c1:#6aa3e0;--c2:#d9b04a;--c3:#3fc08a;--c4:#b58be0;--c5:#ef7d72;
+  --c-base:#a9dcc2;--c-down:#f0925a;--c-up:#7db0ea;--neg:rgba(239,106,96,.10);
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.55 var(--font);min-height:100vh}
+h1,h2,h3,h4{font-family:var(--serif);color:var(--g9);line-height:1.2;margin:0 0 .4em;font-weight:700}
+h1{font-size:2rem}h2{font-size:1.5rem}h3{font-size:1.2rem}h4{font-size:1.05rem}
+p{margin:0 0 .8em}a{color:var(--g7)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+.muted{color:var(--muted)}.small{font-size:.85rem}.tiny{font-size:.75rem}
+.right{margin-left:auto}.center{text-align:center}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.basmala{font-family:var(--serif);font-size:1.7rem;color:var(--gold);text-align:center;direction:rtl;line-height:1.5}
+/* header */
+.top{background:linear-gradient(135deg,#0b3d2e,#146c43);color:#fff;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:30}
+.top .wrap{display:flex;align-items:center;gap:12px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none}
+.mark{width:42px;height:42px;border-radius:50%;border:2px solid #e2bf62;display:grid;place-items:center;font:700 .95rem var(--serif);color:#e2bf62;background:rgba(0,0,0,.18);flex:none;letter-spacing:.02em}
+.brand b{display:block;font:700 1.12rem/1.1 var(--serif)}.brand small{display:block;font-size:.72rem;opacity:.85}
+nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto;align-items:center}
+nav.main button{background:transparent;color:#fff;border:0;padding:8px 11px;border-radius:9px;font:500 .88rem var(--font);cursor:pointer}
+nav.main button:hover,nav.main button[aria-current=page]{background:rgba(255,255,255,.16)}
+nav.main button.lock{background:#e2bf62;color:#0b3d2e;font-weight:700}
+.who{font-size:.78rem;opacity:.9;text-align:right;line-height:1.2}
+.role{display:inline-block;padding:1px 8px;border-radius:99px;background:rgba(226,191,98,.22);border:1px solid #e2bf62;color:#fbe9b0;font-size:.7rem;text-transform:uppercase;letter-spacing:.05em}
+main{padding:22px 0 56px;outline:none}
+.foot{border-top:1px solid var(--line);padding:22px 0 40px;text-align:center;color:var(--muted);font-size:.8rem}
+.foot b{font-family:var(--serif);color:var(--g9);font-size:1rem}
+/* cards & form */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:var(--shadow)}
+.card.flat{box-shadow:none}.card h3{margin-bottom:.6em}
+.btn{font:600 .9rem var(--font);border:1px solid transparent;border-radius:10px;padding:9px 15px;cursor:pointer;display:inline-flex;gap:7px;align-items:center;justify-content:center;text-decoration:none;transition:filter .15s,transform .05s}
+.btn:hover{filter:brightness(1.07)}.btn:active{transform:translateY(1px)}.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn.primary{background:var(--g7);color:#fff}
+@media (prefers-color-scheme:dark){.btn.primary{background:#2f9b6f;color:#04130c}}
+.btn.gold{background:var(--gold2);color:#2b2000;border-color:var(--gold)}
+.btn.ghost{background:transparent;color:var(--g9);border-color:var(--line)}
+.btn.ghost:hover{background:var(--surface2)}
+.btn.danger{background:var(--danger);color:#fff}
+@media (prefers-color-scheme:dark){.btn.danger{color:#1a0503}}
+.btn.sm{padding:5px 10px;font-size:.8rem}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:6px}
+label.lbl{display:block;font-weight:600;font-size:.86rem;margin-bottom:4px;color:var(--ink)}
+.help{font-size:.75rem;color:var(--muted);margin-top:3px}
+.inp{width:100%;font:400 .95rem var(--font);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:9px 11px;min-height:40px}
+.inp:focus{border-color:var(--g5)}
+.numwrap{position:relative;display:flex;align-items:center}
+.numwrap .inp{padding-right:78px}
+.numwrap .unit{position:absolute;right:34px;font-size:.74rem;color:var(--muted);pointer-events:none;max-width:48px;text-align:right;white-space:nowrap;overflow:hidden}
+.numwrap .clr{position:absolute;right:6px;width:24px;height:24px;border-radius:50%;border:0;background:var(--surface2);color:var(--ink2);cursor:pointer;font-size:15px;line-height:1}
+.numwrap .clr:hover{background:var(--line)}
+.fld.invalid .inp{border-color:var(--danger);background:color-mix(in srgb,var(--danger) 7%,var(--surface))}
+.fld .err{display:none;color:var(--danger);font-size:.75rem;margin-top:3px}.fld.invalid .err{display:block}
+.fields{display:grid;gap:14px 16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:3px 11px;border-radius:99px;font-weight:700;font-size:.8rem;border:1.5px solid var(--b,var(--line));background:color-mix(in srgb,var(--b,var(--line)) 14%,var(--surface));color:var(--ink)}
+table{border-collapse:collapse;width:100%;font-size:.88rem}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
+th{font-size:.74rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.tablewrap{overflow-x:auto}
+/* steps */
+.steps{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.steps button{flex:1 1 140px;border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:9px 10px;font:600 .8rem var(--font);color:var(--ink2);cursor:pointer;text-align:left}
+.steps button[aria-current=step]{background:var(--g7);color:#fff;border-color:var(--g7)}
+@media (prefers-color-scheme:dark){.steps button[aria-current=step]{background:#2f9b6f;color:#04130c}}
+.steps button i{display:block;font-style:normal;font-weight:400;font-size:.7rem;opacity:.8}
+.bar{height:8px;background:var(--surface2);border-radius:9px;overflow:hidden}.bar>i{display:block;height:100%;background:linear-gradient(90deg,var(--g7),var(--gold));border-radius:9px}
+.editor{display:grid;gap:18px;grid-template-columns:minmax(0,1fr) 300px;align-items:start}
+.live{position:sticky;top:84px}
+@media (max-width:860px){.editor{grid-template-columns:1fr}.live{position:static;order:-1}}
+/* scale */
+.scale{position:relative;padding-top:34px;margin:6px 0 4px}
+.scale-bar{display:flex;gap:2px;height:16px}
+.scale-bar .seg{border-radius:4px}
+.scale-bar .seg:first-child{border-radius:9px 4px 4px 9px}.scale-bar .seg:last-child{border-radius:4px 9px 9px 4px}
+.scale-labels{display:flex;gap:2px;margin-top:6px}
+.scale-labels span{text-align:center;font-size:.68rem;line-height:1.15;color:var(--ink2);overflow-wrap:anywhere;font-weight:600}
+.scale-ticks{position:relative;height:16px;font-size:.66rem;color:var(--muted)}
+.scale-ticks span{position:absolute;transform:translateX(-50%)}
+.scale-ends{display:flex;justify-content:space-between;font-size:.72rem;color:var(--muted);font-weight:600;margin-top:2px}
+.mk{position:absolute;top:0;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;transition:left .35s ease;pointer-events:none}
+.mk b{background:var(--g9);color:var(--surface);font-size:.8rem;border-radius:7px;padding:1px 8px;min-width:30px;text-align:center}
+.mk i{width:0;height:0;border:7px solid transparent;border-top:9px solid var(--g9);border-bottom:0}
+.mk.alt b{background:var(--surface);color:var(--ink);border:2px dashed var(--ink)}.mk.alt i{border-top-color:var(--ink)}
+.scale.compact .scale-labels,.scale.compact .scale-ticks,.scale.compact .scale-ends{display:none}
+/* verdict */
+.verdict{display:grid;gap:18px;grid-template-columns:auto 1fr;align-items:center}
+@media (max-width:640px){.verdict{grid-template-columns:1fr}}
+.bigscore{width:132px;height:132px;border-radius:50%;display:grid;place-items:center;text-align:center;border:8px solid var(--b);background:color-mix(in srgb,var(--b) 10%,var(--surface))}
+.bigscore b{font:700 2.6rem/1 var(--serif);color:var(--ink);display:block}.bigscore span{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+/* kpis */
+.kpi{border:1px solid var(--line);border-radius:12px;padding:12px;background:var(--surface);border-left:5px solid var(--b,var(--line))}
+.kpi .k{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}
+.kpi .v{font:700 1.35rem/1.25 var(--serif);color:var(--ink)}
+.kpi .s{font-size:.76rem;color:var(--ink2)}
+.st-good{--b:var(--b-thrive)}.st-warn{--b:var(--b-fragile)}.st-bad{--b:var(--b-fail)}.st-neutral{--b:var(--line)}
+.ico{font-weight:800}
+/* path */
+.path{display:flex;gap:4px;flex-wrap:wrap}
+.path .step{flex:1 1 150px;padding:10px 12px;border-radius:10px;background:var(--surface2);border:2px solid transparent;font-size:.82rem;color:var(--ink2);position:relative}
+.path .step b{display:block;color:var(--ink)}
+.path .step.on{border-color:var(--b);background:color-mix(in srgb,var(--b) 15%,var(--surface));color:var(--ink)}
+.gate{display:flex;gap:10px;padding:8px 0;border-bottom:1px dashed var(--line);align-items:flex-start}
+.gate .gi{flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:.8rem;font-weight:800;color:#fff;background:var(--b)}
+.gate.st-warn .gi{color:#2b2000}
+.gate small{display:block;color:var(--muted)}
+/* bars */
+.hbar{display:grid;grid-template-columns:150px 1fr 90px;gap:10px;align-items:center;margin:9px 0;font-size:.86rem}
+@media (max-width:560px){.hbar{grid-template-columns:1fr 70px}.hbar>.t{grid-column:1/-1}}
+.track{position:relative;height:14px;border-radius:8px;background:var(--surface2);overflow:hidden}
+.track>i{position:absolute;left:0;top:0;bottom:0;border-radius:8px;background:var(--b)}
+.track.zones{background:linear-gradient(90deg,color-mix(in srgb,var(--b-fail) 22%,transparent) 0 30%,color-mix(in srgb,var(--b-high) 22%,transparent) 30% 50%,color-mix(in srgb,var(--b-fragile) 22%,transparent) 50% 65%,color-mix(in srgb,var(--b-sust) 22%,transparent) 65% 80%,color-mix(in srgb,var(--b-thrive) 22%,transparent) 80% 100%)}
+.track.zones>i{top:4px;bottom:4px}
+.track .base{position:absolute;top:-2px;bottom:-2px;width:3px;background:var(--ink);z-index:2}
+.stack{display:flex;gap:2px;height:38px}
+.stack>div{border-radius:5px;display:grid;place-items:center;color:#fff;font-size:.72rem;font-weight:700;min-width:2px;overflow:hidden;cursor:default}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:10px;font-size:.8rem;color:var(--ink2)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.chartbox{position:relative}
+#tip{position:fixed;z-index:90;pointer-events:none;background:var(--g9);color:var(--surface);padding:7px 10px;border-radius:8px;font-size:.78rem;line-height:1.4;box-shadow:var(--shadow);display:none;max-width:260px}
+svg text{font-family:var(--font)}
+.slider{width:100%;accent-color:var(--g7)}
+details summary{cursor:pointer;font-weight:600;color:var(--g7);margin:8px 0}
+/* gate / modal / toast */
+.gatewrap{max-width:520px;margin:0 auto;padding:30px 16px}
+.scrim{position:fixed;inset:0;background:rgba(5,15,10,.6);display:grid;place-items:center;z-index:80;padding:16px}
+.modal{background:var(--surface);border-radius:var(--r);padding:22px;max-width:480px;width:100%;box-shadow:var(--shadow);border:1px solid var(--line);max-height:90vh;overflow:auto}
+.mact{display:flex;gap:8px;justify-content:flex-end;margin-top:16px}
+#toasts{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);z-index:95;display:grid;gap:8px}
+.toast{background:var(--g9);color:var(--surface);padding:10px 16px;border-radius:10px;box-shadow:var(--shadow);font-size:.88rem}
+.toast.err{background:var(--danger);color:#fff}
+.strength{height:6px;border-radius:6px;background:var(--surface2);margin-top:6px;overflow:hidden}.strength i{display:block;height:100%;width:0;transition:width .2s,background .2s}
+.notice{border-left:5px solid var(--gold);background:color-mix(in srgb,var(--gold2) 16%,var(--surface));padding:10px 14px;border-radius:8px;font-size:.84rem}
+.notice.warn{border-color:var(--b-fail);background:color-mix(in srgb,var(--b-fail) 9%,var(--surface))}
+ul.clean{margin:0;padding-left:1.1em}ul.clean li{margin:3px 0}
+.check{display:flex;gap:10px;align-items:flex-start;margin:8px 0;font-size:.88rem}.check input{margin-top:4px;width:18px;height:18px;accent-color:var(--g7)}
+.hero{background:linear-gradient(135deg,var(--g9),#146c43);color:#fff;border-radius:var(--r);padding:22px;border:1px solid var(--gold)}
+.hero h2,.hero h1{color:#fff}.hero p{color:#e6efe9}
+.rep-head{display:flex;gap:14px;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;border-bottom:3px double var(--gold);padding-bottom:12px;margin-bottom:16px}
+.rep-foot{margin-top:18px;padding-top:10px;border-top:2px solid var(--gold);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:.75rem;color:var(--muted)}
+.printonly{display:none}
+/* print */
+@media print{
+  :root{--bg:#fff;--surface:#fff;--surface2:#f1efe6;--ink:#111;--ink2:#333;--muted:#555;--line:#cfc8b4;--g9:#0b3d2e;--g7:#146c43;--gold:#9a7415;
+    --b-fail:#c23b32;--b-high:#df7425;--b-fragile:#d4a017;--b-sust:#6f9f3a;--b-thrive:#14855a;--c-base:#0b3d2e;--c-down:#c2561b;--c-up:#2f6fb0;--neg:rgba(194,59,50,.08);
+    --c1:#2f6fb0;--c2:#b8892b;--c3:#1f8f5f;--c4:#8a4fb3;--c5:#d0554a}
+  body{background:#fff;font-size:12px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .no-print,.top,.foot,#toasts,#tip{display:none!important}
+  .printonly{display:block}
+  main{padding:0}.wrap{max-width:none;padding:0}
+  .card{box-shadow:none;break-inside:avoid;margin-bottom:10px;padding:12px}
+  .kpi,.gate,.hbar,.step{break-inside:avoid}
+  .pb{break-before:page}
+  @page{margin:14mm}
+}
+body.standalone .top{display:none}
+</style>
+</head>
+<body>
+<a class="sr" href="#main">Skip to content</a>
+<div id="app"></div>
+<div id="tip" role="tooltip"></div>
+<div id="modal-root"></div>
+<div id="toasts" aria-live="polite"></div>
+<noscript><p style="padding:20px">This application needs JavaScript. It runs entirely in your browser and sends no data anywhere.</p></noscript>
+<script>
+(() => {
+'use strict';
+/* ================= Utilities ================= */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
+const num = v => { const n = parseFloat(v); return isFinite(n) ? n : 0; };
+const int = v => Math.round(num(v));
+const has = v => v !== '' && v !== null && v !== undefined && isFinite(parseFloat(v));
+const fmt = n => isFinite(n) ? new Intl.NumberFormat('en-US', {maximumFractionDigits: 0}).format(Math.round(n)) : '—';
+const sar = n => isFinite(n) ? (n < 0 ? '−' : '') + 'SAR ' + fmt(Math.abs(n)) : '—';
+const pct = (n, d = 1) => isFinite(n) ? (n * 100).toFixed(d) + '%' : '—';
+const kfmt = v => Math.abs(v) >= 1e6 ? (v / 1e6).toFixed(1) + 'M' : Math.abs(v) >= 1000 ? Math.round(v / 1000) + 'k' : String(Math.round(v));
+const uid = () => [...crypto.getRandomValues(new Uint8Array(8))].map(b => b.toString(16).padStart(2, '0')).join('');
+const dstr = iso => { try { return new Date(iso).toLocaleDateString('en-GB', {day: 'numeric', month: 'short', year: 'numeric'}); } catch (e) { return ''; } };
+const dtstr = iso => { try { return new Date(iso).toLocaleString('en-GB', {day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit'}); } catch (e) { return ''; } };
+const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+function lin(x, pts) {
+  if (x <= pts[0][0]) return pts[0][1];
+  for (let i = 1; i < pts.length; i++) if (x <= pts[i][0]) { const [x0, y0] = pts[i-1], [x1, y1] = pts[i]; return y0 + (y1 - y0) * (x - x0) / (x1 - x0); }
+  return pts[pts.length - 1][1];
+}
+function download(name, text, type) {
+  const b = new Blob([text], {type}); const a = document.createElement('a');
+  a.href = URL.createObjectURL(b); a.download = name; document.body.appendChild(a); a.click();
+  setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 600);
+}
+const slug = s => String(s || 'report').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40) || 'report';
+
+/* ================= Storage (falls back to memory if the browser blocks it) ================= */
+const Store = (() => {
+  let ok = true; const mem = {};
+  try { localStorage.setItem('__t', '1'); localStorage.removeItem('__t'); } catch (e) { ok = false; }
+  return {
+    persistent: () => ok,
+    get: k => { try { return ok ? localStorage.getItem(k) : (mem[k] ?? null); } catch (e) { return mem[k] ?? null; } },
+    set: (k, v) => { if (ok) { try { localStorage.setItem(k, v); return; } catch (e) { ok = false; } } mem[k] = v; },
+    del: k => { try { if (ok) localStorage.removeItem(k); } catch (e) {} delete mem[k]; }
+  };
+})();
+const VAULT_KEY = 'bmpa_c2c_madinah_vault_v1', THROTTLE_KEY = 'bmpa_c2c_madinah_throttle_v1', PREF_KEY = 'bmpa_c2c_madinah_prefs_v1';
+const readJSON = k => { try { return JSON.parse(Store.get(k) || 'null'); } catch (e) { return null; } };
+
+/* ================= Cryptography (Web Crypto: PBKDF2 → AES-GCM key wrapping) ================= */
+const enc = new TextEncoder(), dec = new TextDecoder();
+const b64 = buf => { let s = ''; const u = new Uint8Array(buf); for (let i = 0; i < u.length; i += 0x8000) s += String.fromCharCode.apply(null, u.subarray(i, i + 0x8000)); return btoa(s); };
+const unb64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+const ITER = 310000;
+async function deriveKEK(pass, salt, iter) {
+  const base = await crypto.subtle.importKey('raw', enc.encode(pass), 'PBKDF2', false, ['deriveKey']);
+  return crypto.subtle.deriveKey({name: 'PBKDF2', salt, iterations: iter, hash: 'SHA-256'}, base, {name: 'AES-GCM', length: 256}, false, ['wrapKey', 'unwrapKey']);
+}
+const newMaster = () => crypto.subtle.generateKey({name: 'AES-GCM', length: 256}, true, ['encrypt', 'decrypt']);
+async function wrapFor(master, pass) {
+  const salt = crypto.getRandomValues(new Uint8Array(16)), iv = crypto.getRandomValues(new Uint8Array(12));
+  const kek = await deriveKEK(pass, salt, ITER);
+  const w = await crypto.subtle.wrapKey('raw', master, kek, {name: 'AES-GCM', iv});
+  return {salt: b64(salt), iv: b64(iv), wrapped: b64(w), iter: ITER};
+}
+async function unwrapWith(u, pass) {
+  const kek = await deriveKEK(pass, unb64(u.salt), u.iter);
+  return crypto.subtle.unwrapKey('raw', unb64(u.wrapped), kek, {name: 'AES-GCM', iv: unb64(u.iv)}, {name: 'AES-GCM'}, true, ['encrypt', 'decrypt']);
+}
+async function encData(master, obj) {
+  const iv = crypto.getRandomValues(new Uint8Array(12));
+  const ct = await crypto.subtle.encrypt({name: 'AES-GCM', iv}, master, enc.encode(JSON.stringify(obj)));
+  return {iv: b64(iv), ct: b64(ct)};
+}
+async function decData(master, blob) {
+  const pt = await crypto.subtle.decrypt({name: 'AES-GCM', iv: unb64(blob.iv)}, master, unb64(blob.ct));
+  return JSON.parse(dec.decode(pt));
+}
+function strength(p) {
+  let s = 0; if (p.length >= 10) s++; if (p.length >= 14) s++; if (/[a-z]/.test(p) && /[A-Z]/.test(p)) s++; if (/\d/.test(p)) s++; if (/[^A-Za-z0-9]/.test(p)) s++;
+  if (/^(.)\1+$/.test(p) || /password|123456|qwerty|letmein/i.test(p)) s = Math.min(s, 1);
+  return s; // 0..5
+}
+
+/* ================= Session & vault ================= */
+let vault = readJSON(VAULT_KEY);           // {v, users:[{id,uname,salt,iv,wrapped,iter}], blob:{iv,ct}}
+const S = {master: null, user: null, data: null, view: {name: 'dash'}, draft: null, dirty: false, step: 0, last: Date.now(), q: '', whatif: {rent: 0, sales: 0, funds: 0}, gate: 'login'};
+const prefs = () => Object.assign({autoLock: 5}, readJSON(PREF_KEY) || {});
+let saveChain = Promise.resolve();
+function persist() {
+  saveChain = saveChain.then(async () => {
+    if (!S.master || !S.data) return;
+    vault.blob = await encData(S.master, S.data);
+    Store.set(VAULT_KEY, JSON.stringify(vault));
+  });
+  return saveChain;
+}
+function log(e) {
+  if (!S.data) return;
+  S.data.audit.unshift({t: new Date().toISOString(), u: S.user ? S.user.name : '—', e});
+  S.data.audit.length = Math.min(S.data.audit.length, 400);
+}
+const ROLE_LABEL = {admin: 'Administrator', consultant: 'Consultant', client: 'Client'};
+const isStaff = () => S.user && (S.user.role === 'admin' || S.user.role === 'consultant');
+const isAdmin = () => S.user && S.user.role === 'admin';
+const canSee = a => isStaff() || a.ownerId === S.user.id;
+const canEdit = a => isStaff() || a.ownerId === S.user.id;
+
+async function createVault(name, uname, pass) {
+  const master = await newMaster(); const id = uid();
+  const w = await wrapFor(master, pass);
+  const data = {v: 1, users: {[id]: {name, role: 'admin', created: new Date().toISOString(), consentAt: new Date().toISOString()}}, assessments: [], settings: structuredClone(DEFAULT_SETTINGS), audit: []};
+  vault = {v: 1, users: [{id, uname: uname.trim().toLowerCase(), ...w}], blob: null};
+  S.master = master; S.data = data; S.user = {id, ...data.users[id]};
+  log('Practice created'); await persist();
+}
+async function dummyDerive(pass) { await deriveKEK(pass, crypto.getRandomValues(new Uint8Array(16)), ITER); }
+async function doLogin(uname, pass) {
+  const th = readJSON(THROTTLE_KEY) || {fails: 0, until: 0};
+  if (Date.now() < th.until) throw new Error(`Too many attempts. Please wait ${Math.ceil((th.until - Date.now()) / 1000)} seconds.`);
+  const u = vault.users.find(x => x.uname === uname.trim().toLowerCase());
+  let master = null, data = null;
+  try {
+    if (!u) { await dummyDerive(pass); throw 0; }
+    master = await unwrapWith(u, pass); data = await decData(master, vault.blob);
+    if (!data.users || !data.users[u.id]) throw 0;
+  } catch (e) {
+    th.fails = (th.fails || 0) + 1;
+    if (th.fails >= 5) th.until = Date.now() + Math.min(15 * 60e3, 30e3 * 2 ** (th.fails - 5));
+    Store.set(THROTTLE_KEY, JSON.stringify(th));
+    throw new Error('Incorrect username or passcode.');
+  }
+  Store.del(THROTTLE_KEY);
+  S.master = master; S.data = data; S.user = {id: u.id, ...data.users[u.id]};
+  data.settings = Object.assign(structuredClone(DEFAULT_SETTINGS), data.settings || {});
+  data.audit = data.audit || []; data.assessments = data.assessments || [];
+  log('Signed in'); await persist();
+}
+async function lockNow(reason) {
+  if (S.master && S.dirty && S.draft && !S.draft.__invalid) { try { await saveDraft(true); } catch (e) {} }
+  await saveChain;
+  S.master = null; S.user = null; S.data = null; S.draft = null; S.dirty = false; S.view = {name: 'dash'}; S.step = 0; S.gate = 'login';
+  $('#modal-root').innerHTML = ''; $('#tip').style.display = 'none';
+  render();
+  if (reason) toast(reason);
+}
+['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(ev => addEventListener(ev, () => { S.last = Date.now(); }, {passive: true}));
+setInterval(() => { if (S.master && Date.now() - S.last > prefs().autoLock * 60000) lockNow('Locked automatically after inactivity. Unsaved edits were encrypted and kept.'); }, 5000);
+
+/* ================= Modal & toast ================= */
+function ask({title, body = '', ok = 'Confirm', cancel = 'Cancel', danger = false, input = null, noCancel = false}) {
+  return new Promise(res => {
+    const root = $('#modal-root');
+    root.innerHTML = `<div class="scrim"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="mt"><h3 id="mt">${esc(title)}</h3><div class="mbody">${body}</div>
+      ${input ? `<div style="margin-top:12px"><input class="inp" id="minp" type="${input.type || 'text'}" placeholder="${esc(input.ph || '')}" autocomplete="off" spellcheck="false"></div>` : ''}
+      <div class="mact">${noCancel ? '' : `<button class="btn ghost" data-m="0">${esc(cancel)}</button>`}<button class="btn ${danger ? 'danger' : 'primary'}" data-m="1" ${input && input.match ? 'disabled' : ''}>${esc(ok)}</button></div></div></div>`;
+    const done = v => { root.innerHTML = ''; document.removeEventListener('keydown', onKey, true); res(v); };
+    const okBtn = $('[data-m="1"]', root), inp = $('#minp', root);
+    if (inp) { inp.addEventListener('input', () => { if (input.match) okBtn.disabled = inp.value !== input.match; }); inp.focus(); } else okBtn.focus();
+    root.addEventListener('click', function h(e) { const b = e.target.closest('[data-m]'); if (!b) return; root.removeEventListener('click', h); done(b.dataset.m === '1' ? (inp ? inp.value : true) : null); }, {once: false});
+    function onKey(e) { if (e.key === 'Escape' && !noCancel) done(null); if (e.key === 'Enter' && inp && !okBtn.disabled) { e.preventDefault(); done(inp.value); } }
+    document.addEventListener('keydown', onKey, true);
+  });
+}
+function toast(msg, err) {
+  const t = document.createElement('div'); t.className = 'toast' + (err ? ' err' : ''); t.textContent = msg; $('#toasts').appendChild(t);
+  setTimeout(() => t.remove(), err ? 6000 : 3800);
+}
+
+/* ================= Benchmarks (editable by staff) ================= */
+const DEFAULT_SETTINGS = {
+  sectors: {
+    cafe: {name: 'Restaurant / café / food service', ok: .10, bad: .20},
+    retail: {name: 'Retail shop', ok: .10, bad: .20},
+    hosp: {name: 'Hospitality & pilgrim services (guesthouse, travel)', ok: .25, bad: .45},
+    services: {name: 'Personal & professional services (salon, clinic, tutoring)', ok: .12, bad: .25},
+    foodprod: {name: 'Food production / catering', ok: .08, bad: .18},
+    online: {name: 'Online / light-office / delivery', ok: .08, bad: .20},
+    agri: {name: 'Agriculture / aquaculture / other', ok: .08, bad: .18}
+  },
+  tiers: {
+    A: {name: 'Tier A · Central Area / Haram-adjacent', traffic: 90, rentIndex: 1.6},
+    B: {name: 'Tier B · Prime commercial corridors', traffic: 75, rentIndex: 1.2},
+    C: {name: 'Tier C · Residential neighbourhood streets', traffic: 55, rentIndex: .85},
+    D: {name: 'Tier D · Outskirts / industrial / emerging areas', traffic: 35, rentIndex: .6}
+  }
+};
+const RATE5 = ['1 · Very weak', '2 · Weak', '3 · Average', '4 · Strong', '5 · Very strong'];
+const COMP5 = ['1 · Very few competitors', '2 · Few', '3 · Moderate', '4 · Many', '5 · Saturated'];
+
+/* ================= Field definitions ================= */
+const optsRate = list => () => list.map((l, i) => [String(i + 1), l]);
+const FIELDS = [
+  {id: 'profile', title: 'Business & location', sub: 'Who and where', fields: [
+    {k: 'bizName', label: 'Business name', t: 'text', max: 80, req: 1},
+    {k: 'owner', label: 'Owner / applicant (optional)', t: 'text', max: 80, help: 'Leave blank if you prefer — no personal ID is ever required.'},
+    {k: 'sector', label: 'Sector', t: 'sel', opts: st => Object.entries(st.sectors).map(([k, v]) => [k, v.name])},
+    {k: 'tier', label: 'Location tier', t: 'sel', opts: st => Object.entries(st.tiers).map(([k, v]) => [k, v.name]), help: 'Higher tiers bring footfall but usually much higher rent.'},
+    {k: 'hood', label: 'Neighbourhood / street (optional)', t: 'text', max: 80},
+    {k: 'openMonth', label: 'Planned opening month', t: 'sel', opts: () => MONTHS.map((m, i) => [String(i + 1), m])},
+    {k: 'seasonShare', label: 'Sales that depend on pilgrim / seasonal peaks', t: 'num', unit: '%', min: 0, max: 100, help: 'Estimate the share of yearly sales earned in peak seasons.'}
+  ]},
+  {id: 'lease', title: 'Premises & lease', sub: 'The cost that sinks most start-ups', fields: [
+    {k: 'rent', label: 'Monthly rent', t: 'num', unit: 'SAR', min: 0, max: 5e6, req: 1},
+    {k: 'area', label: 'Floor area (optional)', t: 'num', unit: 'm²', min: 0, max: 1e5},
+    {k: 'leaseYears', label: 'Lease term', t: 'num', unit: 'years', min: 0, max: 30, help: 'The years you are legally committing to pay.'},
+    {k: 'escalation', label: 'Annual rent increase', t: 'num', unit: '%/yr', min: 0, max: 50},
+    {k: 'rentFree', label: 'Rent-free months negotiated', t: 'num', unit: 'months', min: 0, max: 24},
+    {k: 'deposit', label: 'Security deposit', t: 'num', unit: 'SAR', min: 0, max: 5e6},
+    {k: 'keyMoney', label: 'Key money / broker / admin fees', t: 'num', unit: 'SAR', min: 0, max: 5e6},
+    {k: 'ejar', label: 'Lease registered (or will be) on Ejar', t: 'sel', opts: () => [['unsure', 'Not sure yet'], ['yes', 'Yes'], ['no', 'No']], help: 'Registered contracts give both parties legal protection.'}
+  ]},
+  {id: 'capital', title: 'Capital & upfront costs', sub: 'What you have vs. what you must spend', fields: [
+    {k: 'funds', label: 'Total startup funds available', t: 'num', unit: 'SAR', min: 0, max: 1e9, req: 1, help: 'Own money + loans + investors, in total.'},
+    {k: 'fitout', label: 'Fit-out & equipment', t: 'num', unit: 'SAR', min: 0, max: 1e9},
+    {k: 'licensing', label: 'Licences, registration & permits', t: 'num', unit: 'SAR', min: 0, max: 1e8},
+    {k: 'inventory', label: 'Opening inventory', t: 'num', unit: 'SAR', min: 0, max: 1e8},
+    {k: 'otherUpfront', label: 'Other upfront spend (branding, IT, etc.)', t: 'num', unit: 'SAR', min: 0, max: 1e8},
+    {k: 'debtMonthly', label: 'Loan repayment per month', t: 'num', unit: 'SAR', min: 0, max: 1e7},
+    {k: 'debtMonths', label: 'Months of loan repayment', t: 'num', unit: 'months', min: 0, max: 120}
+  ]},
+  {id: 'ops', title: 'Sales & running costs', sub: 'Your revenue plan', fields: [
+    {k: 'price', label: 'Average sale per customer', t: 'num', unit: 'SAR', min: 0, max: 1e6, req: 1},
+    {k: 'txnPerDay', label: 'Customers (sales) per day at maturity', t: 'num', unit: '/day', min: 0, max: 1e5, req: 1},
+    {k: 'daysPerMonth', label: 'Trading days per month', t: 'num', unit: 'days', min: 1, max: 31, req: 1},
+    {k: 'gm', label: 'Gross margin (after cost of goods)', t: 'num', unit: '%', min: 0, max: 100, req: 1, help: 'Sales minus direct product costs, as % of sales.'},
+    {k: 'payroll', label: 'Monthly payroll (incl. fees & housing)', t: 'num', unit: 'SAR', min: 0, max: 1e7},
+    {k: 'otherFixed', label: 'Other monthly costs (utilities, marketing, etc.)', t: 'num', unit: 'SAR', min: 0, max: 1e7},
+    {k: 'rampMonths', label: 'Months to reach full sales', t: 'num', unit: 'months', min: 1, max: 36},
+    {k: 'rampStart', label: 'Sales in month 1 vs. full', t: 'num', unit: '%', min: 0, max: 100},
+    {k: 'peakMonths', label: 'Peak-season months per year', t: 'num', unit: 'months', min: 0, max: 6},
+    {k: 'peakUplift', label: 'Peak-season sales uplift', t: 'num', unit: '%', min: 0, max: 300},
+    {k: 'peakStart', label: 'Peak season begins in', t: 'sel', opts: () => MONTHS.map((m, i) => [String(i + 1), m])},
+    {k: 'lowMonths', label: 'Quiet-season months per year', t: 'num', unit: 'months', min: 0, max: 6, help: 'Placed six months after the peak starts.'},
+    {k: 'lowDrop', label: 'Quiet-season sales drop', t: 'num', unit: '%', min: 0, max: 90}
+  ]},
+  {id: 'market', title: 'Owner & market readiness', sub: 'The human side of success', fields: [
+    {k: 'experience', label: 'Years of hands-on experience in this sector', t: 'num', unit: 'years', min: 0, max: 60},
+    {k: 'demand', label: 'Proof of customer demand', t: 'sel', opts: optsRate(RATE5), help: 'Surveys, pre-orders, footfall counts, comparable shops.'},
+    {k: 'competition', label: 'Competition nearby', t: 'sel', opts: optsRate(COMP5)},
+    {k: 'marketing', label: 'Marketing & customer-acquisition plan', t: 'sel', opts: optsRate(RATE5)},
+    {k: 'licensingReady', label: 'Licence & permit readiness', t: 'sel', opts: optsRate(RATE5), help: 'Commercial registration, municipal (Balady) licence, civil defence, etc.'},
+    {k: 'labor', label: 'Labour-law & Saudization readiness', t: 'sel', opts: optsRate(RATE5)},
+    {k: 'team', label: 'Management team strength', t: 'sel', opts: optsRate(RATE5)}
+  ]}
+];
+const ALL_FIELDS = FIELDS.flatMap(s => s.fields);
+const FDEF = Object.fromEntries(ALL_FIELDS.map(f => [f.k, f]));
+function blankInputs() {
+  const o = {}; ALL_FIELDS.forEach(f => o[f.k] = '');
+  Object.assign(o, {sector: 'cafe', tier: 'B', openMonth: String(new Date().getMonth() + 2 > 12 ? 1 : new Date().getMonth() + 2), ejar: 'unsure', leaseYears: '3', escalation: '5', rentFree: '0', daysPerMonth: '26', rampMonths: '9', rampStart: '40', seasonShare: '20', peakMonths: '3', peakUplift: '25', peakStart: '3', lowMonths: '3', lowDrop: '20', demand: '3', competition: '3', marketing: '3', licensingReady: '3', labor: '3', team: '3'});
+  return o;
+}
+const SAMPLE = Object.assign(blankInputs(), {bizName: 'Sample Café (illustrative)', sector: 'cafe', tier: 'B', hood: 'Sample corridor', rent: '8000', area: '80', leaseYears: '3', deposit: '8000', keyMoney: '3000', ejar: 'yes', funds: '250000', fitout: '90000', licensing: '8000', inventory: '20000', otherUpfront: '10000', price: '35', txnPerDay: '90', gm: '62', payroll: '22000', otherFixed: '6000', experience: '3'});
+
+/* ================= Engine ================= */
+const BANDS = [
+  {id: 'fail', min: 0, max: 30, label: 'Probable failure', col: '--b-fail', ico: '✕', action: 'Do not sign this lease as proposed'},
+  {id: 'high', min: 30, max: 50, label: 'High failure risk', col: '--b-high', ico: '!', action: 'Pause and restructure the plan first'},
+  {id: 'fragile', min: 50, max: 65, label: 'Fragile', col: '--b-fragile', ico: '◐', action: 'Renegotiate before you commit'},
+  {id: 'sust', min: 65, max: 80, label: 'Sustainable', col: '--b-sust', ico: '✓', action: 'Proceed with safeguards'},
+  {id: 'thrive', min: 80, max: 101, label: 'Thriving', col: '--b-thrive', ico: '★', action: 'Proceed and protect your advantage'}
+];
+const bandOf = s => BANDS.find(b => s >= b.min && s < b.max) || BANDS[4];
+const WEIGHTS = {rent: 25, liq: 25, profit: 20, market: 15, owner: 15};
+const SUBLABEL = {rent: 'Rent & lease burden', liq: 'Cash runway & liquidity', profit: 'Profitability & break-even cushion', market: 'Market & location strength', owner: 'Owner & compliance readiness'};
+const REQUIRED = ALL_FIELDS.filter(f => f.req).map(f => f.k);
+
+function cleanInputs(inp) {
+  const o = {...inp};
+  ALL_FIELDS.forEach(f => { if (f.t === 'num') { let n = has(o[f.k]) ? parseFloat(o[f.k]) : 0; if (f.min !== undefined) n = Math.max(f.min, n); if (f.max !== undefined) n = Math.min(f.max, n); o[f.k] = n; } });
+  return o;
+}
+function missing(inp) { return REQUIRED.filter(k => !has(inp[k]) && !(FDEF[k].t === 'text' && String(inp[k] || '').trim())); }
+function completeness(inp) { const n = ALL_FIELDS.filter(f => f.t === 'sel' || has(inp[f.k]) || String(inp[f.k] || '').trim()).length; return n / ALL_FIELDS.length; }
+
+function seasonVec(i) {
+  const p = clamp(int(i.peakMonths), 0, 6), l = clamp(int(i.lowMonths), 0, 6), up = num(i.peakUplift) / 100, dn = clamp(num(i.lowDrop) / 100, 0, .95);
+  const start = clamp(int(i.peakStart) || 1, 1, 12); const v = Array(12).fill(1);
+  for (let k = 0; k < p; k++) v[(start - 1 + k) % 12] = 1 + up;
+  for (let k = 0; k < l; k++) v[(start - 1 + 6 + k) % 12] = 1 - dn;
+  const mean = v.reduce((a, b) => a + b, 0) / 12; return v.map(x => x / mean);
+}
+function simulate(i, sc) {
+  const price = i.price, days = i.daysPerMonth, gm = clamp(i.gm, 0, 100) / 100;
+  const baseRev = price * i.txnPerDay * days * sc.vol;
+  const rampN = Math.max(1, Math.round(i.rampMonths)), r0 = clamp(i.rampStart, 0, 100) / 100;
+  const sv = seasonVec(i), om = clamp(Math.round(i.openMonth) || 1, 1, 12);
+  const funds = i.funds + sc.extraFunds;
+  const upfront = i.deposit + i.keyMoney + i.fitout * sc.fitMult + i.licensing + i.inventory + i.otherUpfront;
+  const cash0 = funds - upfront; let cash = cash0, cum = 0; const rows = [];
+  for (let t = 1; t <= 36; t++) {
+    const ramp = rampN <= 1 ? 1 : r0 + (1 - r0) * Math.min(1, (t - 1) / (rampN - 1));
+    const rev = baseRev * ramp * sv[(om - 1 + t - 1) % 12], cogs = rev * (1 - gm);
+    const rent = t <= i.rentFree ? 0 : i.rent * sc.rentMult * Math.pow(1 + i.escalation / 100, Math.floor((t - 1) / 12));
+    const payroll = i.payroll * sc.payMult, other = i.otherFixed, debt = t <= i.debtMonths ? i.debtMonthly : 0;
+    const net = rev - cogs - rent - payroll - other - debt; cash += net; cum += net;
+    rows.push({t, rev, cogs, rent, payroll, other, debt, net, cash, cum});
+  }
+  const mat = rows.slice(12, 24), avg = f => mat.reduce((s, r) => s + f(r), 0) / mat.length;
+  const aRev = avg(r => r.rev), aRent = avg(r => r.rent), aNet = avg(r => r.net), aFixed = avg(r => r.rent + r.payroll + r.other + r.debt);
+  const aC = {cogs: avg(r => r.cogs), rent: aRent, payroll: avg(r => r.payroll), other: avg(r => r.other), debt: avg(r => r.debt)};
+  const neg = rows.find(r => r.cash < 0), runway = cash0 < 0 ? 0 : (neg ? neg.t - 1 : 36);
+  const beRev = gm > 0 ? aFixed / gm : Infinity, mos = aRev > 0 && isFinite(beRev) ? (aRev - beRev) / aRev : -1;
+  const beMonth = (rows.find(r => r.net >= 0) || {}).t || null;
+  const payback = upfront > 0 ? ((rows.find(r => r.cum >= upfront) || {}).t || null) : null;
+  return {rows, cash0, funds, upfront, runway, aRev, aRent, aNet, aFixed, aC, beRev, mos, beMonth, payback, rentRatio: aRev > 0 ? aRent / aRev : 1, minCash: Math.min(cash0, ...rows.map(r => r.cash))};
+}
+const SC0 = {vol: 1, rentMult: 1, extraFunds: 0, fitMult: 1, payMult: 1};
+function evaluate(raw, st) {
+  const i = cleanInputs(raw);
+  const base = simulate(i, SC0), down = simulate(i, {...SC0, vol: .8, rentMult: 1.1}), up = simulate(i, {...SC0, vol: 1.15});
+  const sec = st.sectors[i.sector] || {ok: .1, bad: .2, name: 'Sector'}, tier = st.tiers[i.tier] || {traffic: 55, name: 'Tier'};
+  const rate = v => clamp((num(v) - 1) / 4, 0, 1) * 100;
+  const cy = Math.max(1, Math.min(Math.round(i.leaseYears) || 1, 3));
+  const commit = base.rows.slice(0, cy * 12).reduce((s, r) => s + r.rent, 0), commitMult = commit / Math.max(i.funds, 1);
+  const sRatio = lin(base.rentRatio, [[0, 100], [sec.ok, 80], [sec.bad, 25], [sec.bad * 1.7, 0]]);
+  const sCommit = lin(commitMult, [[0, 100], [.5, 85], [1, 60], [1.5, 40], [2.5, 15], [4, 0]]);
+  const subs = {};
+  subs.rent = clamp(.7 * sRatio + .3 * sCommit, 0, 100);
+  subs.liq = base.cash0 < 0 ? 0 : lin(.6 * base.runway + .4 * down.runway, [[0, 0], [3, 15], [6, 35], [12, 65], [18, 82], [24, 95], [36, 100]]);
+  subs.profit = lin(base.mos, [[-.5, 0], [-.2, 10], [0, 35], [.15, 65], [.3, 85], [.5, 100]]);
+  const mk = (rate(i.demand) + rate(6 - i.competition) + rate(i.marketing)) / 3;
+  subs.market = clamp(.6 * mk + .4 * tier.traffic - .15 * clamp(i.seasonShare, 0, 100), 0, 100);
+  subs.owner = clamp(.3 * lin(i.experience, [[0, 20], [2, 45], [5, 75], [10, 100]]) + .3 * rate(i.licensingReady) + .2 * rate(i.labor) + .2 * rate(i.team), 0, 100);
+  let score = Object.keys(WEIGHTS).reduce((s, k) => s + subs[k] * WEIGHTS[k] / 100, 0);
+  const capped = base.cash0 < 0; if (capped) score = Math.min(score, 29);
+  score = clamp(score, 0, 100);
+  const p24 = 1 / (1 + Math.exp((score - 38) / 10)), p12 = p24 * .6;
+  // flags
+  const flags = [];
+  if (base.cash0 < 0) flags.push(['bad', `Funding gap: upfront costs exceed your funds by ${sar(-base.cash0)}. The plan cannot open as designed.`]);
+  if (base.rentRatio > sec.bad) flags.push(['bad', `Rent absorbs ${pct(base.rentRatio)} of mature sales — above the ${pct(sec.bad, 0)} danger line for this sector.`]);
+  else if (base.rentRatio > sec.ok) flags.push(['warn', `Rent absorbs ${pct(base.rentRatio)} of mature sales; the comfort limit for this sector is ${pct(sec.ok, 0)}.`]);
+  if (base.cash0 >= 0 && base.runway < 12) flags.push([base.runway < 6 ? 'bad' : 'warn', `Base-case cash lasts only ${base.runway} month${base.runway === 1 ? '' : 's'} before running out.`]);
+  if (down.runway < 12 && base.runway >= 12) flags.push(['warn', `If sales fall 20% and rent rises 10%, cash runs out after ${down.runway} months.`]);
+  if (base.mos < 0) flags.push(['bad', `Planned mature sales sit below break-even (you need ${sar(base.beRev)}/month; plan is ${sar(base.aRev)}).`]);
+  else if (base.mos < .1) flags.push(['warn', `Sales plan is only ${pct(base.mos, 0)} above break-even — almost no safety cushion.`]);
+  if (commitMult > 1.5) flags.push(['bad', `The first ${cy} year(s) of lease commit ${sar(commit)} — ${commitMult.toFixed(1)}× your total startup funds.`]);
+  else if (commitMult > 1) flags.push(['warn', `Lease commitment (${sar(commit)}) exceeds your total startup funds.`]);
+  if (i.gm < 25 && i.gm > 0) flags.push(['warn', `Gross margin of ${i.gm}% is thin for absorbing fixed costs.`]);
+  if (i.seasonShare > 50) flags.push(['warn', `Over half of sales depend on peak seasons, so cash must bridge the quiet months.`]);
+  if (i.ejar === 'no') flags.push(['warn', 'The lease will not be registered on Ejar, which weakens your legal protection as tenant.']);
+  if (num(raw.licensingReady) <= 2) flags.push(['warn', 'Licences and permits are not ready — delays mean paying rent while you cannot trade.']);
+  // decision gates
+  const gates = [
+    {t: 'Funds cover all upfront costs', s: base.cash0 >= 0 ? 'good' : 'bad', d: `${sar(base.cash0)} left after upfront spend of ${sar(base.upfront)}`},
+    {t: 'Rent within sector comfort limit', s: base.rentRatio <= sec.ok ? 'good' : base.rentRatio <= sec.bad ? 'warn' : 'bad', d: `${pct(base.rentRatio)} of sales (comfort ≤ ${pct(sec.ok, 0)}, danger > ${pct(sec.bad, 0)})`},
+    {t: '12+ months of cash runway', s: base.runway >= 12 ? 'good' : base.runway >= 6 ? 'warn' : 'bad', d: base.runway >= 36 ? 'Cash never runs out within 36 months' : `Cash lasts ${base.runway} months`},
+    {t: 'Sales plan clears break-even by 10%+', s: base.mos >= .1 ? 'good' : base.mos >= 0 ? 'warn' : 'bad', d: `Cushion ${pct(base.mos, 0)}`},
+    {t: 'Survives a downside year', s: down.runway >= 12 ? 'good' : down.runway >= 6 ? 'warn' : 'bad', d: down.runway >= 36 ? 'Cash holds through 36 months' : `Downside cash lasts ${down.runway} months`},
+    {t: 'Lease registered & licences ready', s: (i.ejar === 'yes' && num(raw.licensingReady) >= 4) ? 'good' : (i.ejar !== 'no' && num(raw.licensingReady) >= 3) ? 'warn' : 'bad', d: `Ejar: ${i.ejar === 'yes' ? 'yes' : i.ejar === 'no' ? 'no' : 'not sure'} · licence readiness ${num(raw.licensingReady)}/5`}
+  ];
+  return {score, subs, band: bandOf(score), p12, p24, base, down, up, flags, gates, sec, tier, commit, commitMult, cy, capped, i};
+}
+function levers(raw, st, res) {
+  const i = {...raw}; const out = []; const f = (label, desc, mut) => { const c = {...i}; mut(c); const r = evaluate(c, st); out.push({label, desc, score: r.score, band: r.band, delta: r.score - res.score}); };
+  f('Negotiate rent down 15%', 'Counter-offer or choose a comparable unit.', c => c.rent = num(c.rent) * .85);
+  f('Win 3 extra rent-free months', 'Fit-out and ramp-up period without rent.', c => c.rentFree = num(c.rentFree) + 3);
+  f('Add SAR 50,000 of reserve', 'Extra capital held back as a cash cushion.', c => c.funds = num(c.funds) + 50000);
+  f('Cut fit-out cost by 30%', 'Phase equipment and finishes; buy used.', c => c.fitout = num(c.fitout) * .7);
+  f('Lift sales 10%', 'Better pricing, marketing or opening hours.', c => c.txnPerDay = num(c.txnPerDay) * 1.1);
+  f('Trim payroll 10%', 'Leaner opening team; owner-operated early on.', c => c.payroll = num(c.payroll) * .9);
+  f('Shorten the lease commitment to 2 years', 'Keep an extension option instead of a long lock-in.', c => c.leaseYears = Math.min(num(c.leaseYears) || 1, 2));
+  const keys = Object.keys(st.tiers), idx = keys.indexOf(raw.tier);
+  if (idx >= 0 && idx < keys.length - 1) {
+    const cur = st.tiers[raw.tier], nx = st.tiers[keys[idx + 1]];
+    f(`Move down to ${nx.name.split('·')[0].trim()} location`, 'Lower rent but less footfall.', c => { c.tier = keys[idx + 1]; c.rent = num(c.rent) * nx.rentIndex / cur.rentIndex; c.txnPerDay = num(c.txnPerDay) * Math.pow(nx.traffic / cur.traffic, .6); });
+  }
+  f('Combined plan: rent −15%, +3 rent-free months, +SAR 50k reserve', 'Three moves together.', c => { c.rent = num(c.rent) * .85; c.rentFree = num(c.rentFree) + 3; c.funds = num(c.funds) + 50000; });
+  return out.sort((a, b) => b.delta - a.delta);
+}
+
+/* ================= Charts & report components ================= */
+const bcol = b => `var(${b.col})`;
+const stIco = s => ({good: '✓', warn: '!', bad: '✕', neutral: '•'}[s]);
+const stTxt = s => ({good: 'Pass', warn: 'Caution', bad: 'Fail', neutral: ''}[s]);
+
+function scaleHTML(score, opts = {}) {
+  const alt = opts.alt;
+  const total = 100; let acc = 0; const ticks = [0, 30, 50, 65, 80, 100];
+  return `<div class="scale ${opts.compact ? 'compact' : ''}" role="img" aria-label="Success scale: score ${Math.round(score)} of 100, ${bandOf(score).label}${alt != null ? ', what-if ' + Math.round(alt) : ''}">
+    <div class="scale-bar">${BANDS.map(b => `<div class="seg" style="flex:${Math.min(b.max, 100) - b.min};background:${bcol(b)}"></div>`).join('')}</div>
+    <div class="mk" style="left:${clamp(score, 1.5, 98.5)}%"><b>${Math.round(score)}</b><i></i></div>
+    ${alt != null ? `<div class="mk alt" style="left:${clamp(alt, 1.5, 98.5)}%;top:-2px"><b>${Math.round(alt)}</b><i></i></div>` : ''}
+    <div class="scale-labels">${BANDS.map(b => `<span style="flex:${Math.min(b.max, 100) - b.min}">${b.label}</span>`).join('')}</div>
+    <div class="scale-ticks">${ticks.map(t => `<span style="left:${t}%">${t}</span>`).join('')}</div>
+    <div class="scale-ends"><span>◀ Business failure</span><span>Success ▶</span></div></div>`;
+}
+function kpi(k, v, s, st = 'neutral') { return `<div class="kpi st-${st}"><div class="k">${k}</div><div class="v">${v}${st !== 'neutral' ? ` <span class="ico" title="${stTxt(st)}" aria-label="${stTxt(st)}">${stIco(st)}</span>` : ''}</div><div class="s">${s}</div></div>`; }
+function subBars(res) {
+  return Object.keys(WEIGHTS).map(k => { const v = res.subs[k], b = bandOf(v);
+    return `<div class="hbar"><div class="t"><b>${SUBLABEL[k]}</b><br><span class="tiny muted">Weight ${WEIGHTS[k]}%</span></div><div class="track zones" style="--b:${bcol(b)}" data-tip="${esc(SUBLABEL[k])}: ${Math.round(v)}/100 (${b.label})"><i style="width:${v}%"></i></div><div><b>${Math.round(v)}</b> <span class="chip" style="--b:${bcol(b)};padding:1px 8px;font-size:.68rem">${b.ico} ${b.label}</span></div></div>`; }).join('');
+}
+const COSTS = [['cogs', 'Cost of goods', '--c1'], ['rent', 'Rent', '--c2'], ['payroll', 'Payroll', '--c3'], ['other', 'Other fixed', '--c4'], ['debt', 'Loan repayment', '--c5']];
+function costStack(res) {
+  const b = res.base, rev = b.aRev; if (rev <= 0) return '<p class="muted">Enter sales figures to see where each riyal goes.</p>';
+  const parts = COSTS.map(([k, l, c]) => ({k, l, c, v: b.aC[k]})).filter(p => p.v > 0);
+  const cost = parts.reduce((s, p) => s + p.v, 0), profit = rev - cost, tot = Math.max(rev, cost);
+  const segs = parts.map(p => ({...p, share: p.v / rev})); if (profit > 0) segs.push({k: 'profit', l: 'Operating profit', c: '--b-thrive', v: profit, share: profit / rev});
+  return `<div class="stack" role="img" aria-label="Mature month cost structure as share of sales">${segs.map(s => `<div style="flex:${s.v / tot};background:var(${s.c})" data-tip="${esc(s.l)}: ${sar(s.v)} per month (${pct(s.share, 0)} of sales)">${s.v / tot > .08 ? Math.round(s.share * 100) + '%' : ''}</div>`).join('')}</div>
+   <div class="legend">${segs.map(s => `<span><i style="background:var(${s.c})"></i>${s.l} ${sar(s.v)} (${pct(s.share, 0)})</span>`).join('')}</div>
+   <p class="small" style="margin-top:8px">${profit >= 0 ? `At full maturity, out of every SAR 100 of sales about <b>SAR ${(100 * b.aRent / rev).toFixed(0)}</b> goes to rent and <b>SAR ${(100 * profit / rev).toFixed(0)}</b> is left as operating profit.` : `<b>Costs equal ${pct(cost / rev, 0)} of sales</b> at maturity — a monthly loss of ${sar(-profit)}. Rent alone takes ${pct(b.aRent / rev, 0)}.`}</p>`;
+}
+function leversHTML(res, lv) {
+  const bs = res.score;
+  return `<div class="small muted" style="margin-bottom:6px">Black tick = your current score (${Math.round(bs)}). Bars show the score if you take that single decision.</div>` +
+    lv.map(l => `<div class="hbar"><div class="t"><b>${esc(l.label)}</b><br><span class="tiny muted">${esc(l.desc)}</span></div><div class="track zones" style="--b:${bcol(l.band)}" data-tip="${esc(l.label)} → ${Math.round(l.score)} (${l.band.label})"><i style="width:${l.score}%"></i><span class="base" style="left:${bs}%"></span></div><div><b>${Math.round(l.score)}</b> <span class="small" style="color:${l.delta >= 0 ? 'var(--b-thrive)' : 'var(--b-fail)'};font-weight:700">${l.delta >= 0 ? '+' : '−'}${Math.abs(l.delta).toFixed(1)}</span><br><span class="tiny muted">${l.band.label}</span></div></div>`).join('');
+}
+function pathHTML(res) {
+  const steps = [['Proceed', 'Thriving or Sustainable with all gates passing', ['thrive']], ['Proceed with safeguards', 'Sustainable — fix any cautions first', ['sust']], ['Renegotiate', 'Fragile — change rent, lease or capital before signing', ['fragile']], ['Pause & restructure', 'High risk — rebuild the plan', ['high']], ['Do not sign', 'Probable failure as proposed', ['fail']]];
+  return `<div class="path">${steps.map(s => { const on = s[2][0] === res.band.id; return `<div class="step ${on ? 'on' : ''}" style="--b:${bcol(res.band)}">${on ? '<span class="sr">Your result: </span>' : ''}<b>${on ? '▶ ' : ''}${s[0]}</b>${s[1]}</div>`; }).join('')}</div>`;
+}
+function gatesHTML(res) { return res.gates.map(g => `<div class="gate st-${g.s}"><span class="gi" aria-hidden="true">${stIco(g.s)}</span><div><b>${g.t}</b> <span class="tiny muted">— ${stTxt(g.s)}</span><small>${esc(g.d)}</small></div></div>`).join(''); }
+
+/* Cash-flow line chart (one axis, three scenarios, hover crosshair) */
+function cashChart(el, res) {
+  if (!el) return;
+  const w = Math.max(300, Math.floor(el.clientWidth || 640)), small = w < 480, h = small ? 270 : 330;
+  const m = {l: small ? 46 : 58, r: small ? 62 : 92, t: 14, b: 34};
+  const S3 = [{k: 'down', l: 'Downside', d: '7 5', c: 'var(--c-down)', w: 2}, {k: 'base', l: 'Base case', d: '', c: 'var(--c-base)', w: 3}, {k: 'up', l: 'Upside', d: '2 4', c: 'var(--c-up)', w: 2}];
+  const pts = k => [{t: 0, cash: res[k].cash0}, ...res[k].rows.map(r => ({t: r.t, cash: r.cash}))];
+  const all = S3.flatMap(s => pts(s.k).map(p => p.cash));
+  let lo = Math.min(0, ...all), hi = Math.max(0, ...all); const pad = (hi - lo) * .08 || 1000; lo -= pad; hi += pad;
+  const step = (() => { const raw = (hi - lo) / 5, p = Math.pow(10, Math.floor(Math.log10(raw))); return [1, 2, 2.5, 5, 10].map(x => x * p).find(x => x >= raw); })();
+  const y0 = Math.floor(lo / step) * step, y1 = Math.ceil(hi / step) * step;
+  const X = t => m.l + (w - m.l - m.r) * t / 36, Y = v => m.t + (h - m.t - m.b) * (1 - (v - y0) / (y1 - y0));
+  let g = `<rect x="${m.l}" y="${Y(0)}" width="${w - m.l - m.r}" height="${Math.max(0, h - m.b - Y(0))}" fill="var(--neg)"/>`;
+  for (let v = y0; v <= y1 + 1; v += step) g += `<line x1="${m.l}" x2="${w - m.r}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--line)" stroke-width="1"/><text x="${m.l - 6}" y="${Y(v) + 4}" text-anchor="end" font-size="11" fill="var(--muted)">${kfmt(v)}</text>`;
+  for (let t = 0; t <= 36; t += 6) g += `<text x="${X(t)}" y="${h - 14}" text-anchor="middle" font-size="11" fill="var(--muted)">${t === 0 ? 'Open' : 'M' + t}</text>`;
+  g += `<line x1="${m.l}" x2="${w - m.r}" y1="${Y(0)}" y2="${Y(0)}" stroke="var(--ink)" stroke-width="1.5"/><text x="${m.l + 4}" y="${Y(0) - 5}" font-size="10.5" fill="var(--ink2)" font-weight="600">Cash-out line (SAR 0)</text>`;
+  const ends = [];
+  S3.forEach(s => { const p = pts(s.k); g += `<path d="${p.map((q, i) => (i ? 'L' : 'M') + X(q.t).toFixed(1) + ' ' + Y(q.cash).toFixed(1)).join('')}" fill="none" stroke="${s.c}" stroke-width="${s.w}" stroke-dasharray="${s.d}" stroke-linecap="round" stroke-linejoin="round"/>`; ends.push({s, y: Y(p[p.length - 1].cash), v: p[p.length - 1].cash}); });
+  ends.sort((a, b) => a.y - b.y); for (let i = 1; i < ends.length; i++) if (ends[i].y - ends[i - 1].y < 14) ends[i].y = ends[i - 1].y + 14;
+  ends.forEach(e => g += `<text x="${w - m.r + 6}" y="${e.y + 4}" font-size="11.5" font-weight="700" fill="var(--ink)">${e.s.l}</text><circle cx="${w - m.r}" cy="${Y(e.v)}" r="3.5" fill="${e.s.c}" stroke="var(--surface)" stroke-width="2"/>`);
+  [['down', 'Downside'], ['base', 'Base'], ['up', 'Upside']].forEach(([k]) => { const r = res[k]; if (r.runway < 36 && r.cash0 >= 0) { const t = r.runway + 1; g += `<circle cx="${X(t)}" cy="${Y(0)}" r="5" fill="var(--b-fail)" stroke="var(--surface)" stroke-width="2"/>`; } });
+  el.innerHTML = `<svg viewBox="0 0 ${w} ${h}" width="100%" role="img" aria-label="Projected cash balance over 36 months under downside, base and upside scenarios. Table below gives the values." style="display:block;touch-action:pan-y"><g>${g}</g><line id="xh" y1="${m.t}" y2="${h - m.b}" stroke="var(--ink)" stroke-dasharray="3 3" style="display:none"/><rect x="${m.l}" y="${m.t}" width="${w - m.l - m.r}" height="${h - m.t - m.b}" fill="transparent" id="hit"/></svg>`;
+  const svg = el.firstElementChild, xh = $('#xh', svg), hit = $('#hit', svg), tip = $('#tip');
+  const move = e => { const r = svg.getBoundingClientRect(), sx = w / r.width, px = (e.clientX - r.left) * sx; const t = clamp(Math.round((px - m.l) / (w - m.l - m.r) * 36), 0, 36);
+    xh.setAttribute('x1', X(t)); xh.setAttribute('x2', X(t)); xh.style.display = '';
+    const val = k => t === 0 ? res[k].cash0 : res[k].rows[t - 1].cash;
+    tip.innerHTML = `<b>${t === 0 ? 'At opening' : 'Month ' + t}</b><br>Upside: ${sar(val('up'))}<br>Base: <b>${sar(val('base'))}</b><br>Downside: ${sar(val('down'))}`;
+    tip.style.display = 'block'; tip.style.left = Math.min(innerWidth - 240, e.clientX + 14) + 'px'; tip.style.top = (e.clientY + 14) + 'px'; };
+  hit.addEventListener('pointermove', move); hit.addEventListener('pointerdown', move);
+  hit.addEventListener('pointerleave', () => { xh.style.display = 'none'; tip.style.display = 'none'; });
+}
+function cashTable(res) {
+  const ts = [0, 3, 6, 9, 12, 18, 24, 30, 36]; const v = (k, t) => t === 0 ? res[k].cash0 : res[k].rows[t - 1].cash;
+  return `<div class="tablewrap"><table><thead><tr><th>Month</th><th class="num">Downside</th><th class="num">Base</th><th class="num">Upside</th></tr></thead><tbody>${ts.map(t => `<tr><td>${t === 0 ? 'Opening' : 'Month ' + t}</td>${['down', 'base', 'up'].map(k => `<td class="num" style="${v(k, t) < 0 ? 'color:var(--b-fail);font-weight:700' : ''}">${sar(v(k, t))}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+}
+function inputsTable(raw, st) {
+  const val = (f, v) => f.t === 'sel' ? ((f.opts(st).find(o => o[0] === String(v)) || [0, '—'])[1]) : (f.t === 'text' ? (esc(v) || '—') : (has(v) ? (f.unit === 'SAR' ? sar(num(v)) : fmt(num(v)) + ' ' + esc(f.unit || '')) : '—'));
+  return FIELDS.map(s => `<h4 style="margin-top:12px">${s.title}</h4><div class="tablewrap"><table><tbody>${s.fields.map(f => `<tr><td style="width:55%">${f.label}</td><td>${val(f, raw[f.k])}</td></tr>`).join('')}</tbody></table></div>`).join('');
+}
+
+/* Report (also the printable document) */
+function reportHTML(a, res, lv, opts = {}) {
+  const st = S.data.settings, i = res.i, b = res.band, base = res.base;
+  const rr = base.rentRatio, secS = res.sec;
+  const sbad = rr > secS.bad ? 'bad' : rr > secS.ok ? 'warn' : 'good';
+  return `<div id="report">
+  <div class="card" style="padding:0;overflow:hidden">
+   <div class="hero" style="border-radius:0;border:0;border-bottom:3px solid var(--gold)"><div class="basmala" style="color:#e2bf62" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+    <div class="row" style="justify-content:space-between;align-items:flex-end;margin-top:6px"><div><div class="tiny" style="letter-spacing:.14em;text-transform:uppercase;color:#e2bf62">Creed-to-Commerce™ · Madinah Viability Compass</div><h1 style="margin:.15em 0 0">Business Viability Report</h1></div>
+    <div class="small" style="text-align:right;color:#e6efe9">${dstr(a.updated || a.created)}<br>Ref ${esc(a.id.slice(0, 8).toUpperCase())}</div></div></div>
+   <div style="padding:16px 18px"><div class="row" style="justify-content:space-between"><div><h2 style="margin:0">${esc(i.bizName || 'Untitled business')}</h2><div class="muted small">${esc(secS.name)} · ${esc(res.tier.name)}${i.hood ? ' · ' + esc(i.hood) : ''}${i.owner ? '<br>Applicant: ' + esc(i.owner) : ''}</div></div>
+   <div class="small muted" style="text-align:right">Prepared for: ${esc(a.ownerName || '')}</div></div></div></div>
+
+  <div class="card" style="margin-top:14px"><div class="verdict" style="--b:${bcol(b)}">
+    <div class="bigscore" style="--b:${bcol(b)}"><div><b>${Math.round(res.score)}</b><span>of 100</span></div></div>
+    <div><div class="chip" style="--b:${bcol(b)};font-size:.95rem">${b.ico} ${b.label}</div>
+    <h3 style="margin:.45em 0 .2em">${b.action}.</h3>
+    <p class="small" style="margin-bottom:4px">Indicative failure risk: <b>${pct(res.p12, 0)}</b> within 12 months · <b>${pct(res.p24, 0)}</b> within 24 months. <span class="muted">A risk index calibrated to the score — not a statistical forecast.</span></p>
+    ${res.capped ? '<div class="notice warn small"><b>Score capped at 29:</b> your upfront costs exceed your available funds.</div>' : ''}</div></div>
+    ${scaleHTML(res.score, {alt: opts.alt})}</div>
+
+  <div class="grid g4" style="margin-top:14px">
+    ${kpi('Cash after upfront costs', sar(base.cash0), `of ${sar(base.upfront)} spent before opening`, base.cash0 >= 0 ? 'good' : 'bad')}
+    ${kpi('Cash runway', base.runway >= 36 ? '36+ months' : base.runway + ' months', `Downside: ${res.down.runway >= 36 ? '36+' : res.down.runway} months`, base.runway >= 12 ? 'good' : base.runway >= 6 ? 'warn' : 'bad')}
+    ${kpi('Rent ÷ sales (mature)', pct(rr), `Sector comfort ≤ ${pct(secS.ok, 0)} · danger > ${pct(secS.bad, 0)}`, sbad)}
+    ${kpi('Mature monthly profit', sar(base.aNet), `On sales of ${sar(base.aRev)}/month`, base.aNet > 0 ? 'good' : 'bad')}
+    ${kpi('Break-even sales', isFinite(base.beRev) ? sar(base.beRev) + '/mo' : '—', isFinite(base.beRev) && i.price * i.daysPerMonth > 0 ? `≈ ${(base.beRev / (i.price * i.daysPerMonth)).toFixed(0)} customers/day vs ${fmt(i.txnPerDay)} planned` : '', base.mos >= .1 ? 'good' : base.mos >= 0 ? 'warn' : 'bad')}
+    ${kpi('Safety cushion', pct(base.mos, 0), 'Plan above break-even', base.mos >= .15 ? 'good' : base.mos >= 0 ? 'warn' : 'bad')}
+    ${kpi('Lease commitment', sar(res.commit), `${res.cy}-yr obligation = ${res.commitMult.toFixed(1)}× your funds`, res.commitMult <= 1 ? 'good' : res.commitMult <= 1.5 ? 'warn' : 'bad')}
+    ${kpi('First profitable month', base.beMonth ? 'Month ' + base.beMonth : 'Not within 36 mo', base.payback ? `Upfront spend recovered by month ${base.payback}` : 'Upfront spend not recovered in 36 months', base.beMonth && base.beMonth <= 9 ? 'good' : base.beMonth ? 'warn' : 'bad')}
+  </div>
+
+  <div class="grid g2" style="margin-top:14px">
+   <div class="card"><h3>Decision pathway</h3>${pathHTML(res)}<div style="margin-top:12px">${gatesHTML(res)}</div></div>
+   <div class="card"><h3>What is driving the score</h3>${subBars(res)}</div></div>
+
+  <div class="card" style="margin-top:14px"><h3>Where each riyal of sales goes <span class="muted small" style="font-family:var(--font);font-weight:400">(full-maturity month)</span></h3>${costStack(res)}</div>
+
+  <div class="card" style="margin-top:14px"><h3>36-month cash outlook <span class="muted small" style="font-family:var(--font);font-weight:400">— three scenarios</span></h3>
+   <div class="chartbox" id="cashchart"></div>
+   <p class="tiny muted" style="margin:6px 0">Downside = sales −20% and rent +10%. Upside = sales +15%. Red dots mark where cash first goes below zero. ${opts.live ? 'Hover or tap the chart for exact values.' : ''}</p>
+   <details><summary>View as data table</summary>${cashTable(res)}</details></div>
+
+  <div class="card" style="margin-top:14px"><h3>Risk signals</h3>${res.flags.length ? `<ul class="clean">${res.flags.filter(f => f.length).map(f => `<li><span class="ico" style="color:var(--b-${f[0] === 'bad' ? 'fail' : 'fragile'})">${f[0] === 'bad' ? '✕' : '!'}</span> ${esc(f[1])}</li>`).join('')}</ul>` : '<p>No major warning signals detected. Keep monitoring actual results against this plan.</p>'}</div>
+
+  <div class="card pb" style="margin-top:14px"><h3>Decision levers — what would change the outcome?</h3>${leversHTML(res, lv)}</div>
+
+  <div class="card" style="margin-top:14px"><h3>Your inputs</h3>${inputsTable(a.inputs, st)}</div>
+
+  <div class="card" style="margin-top:14px"><h3>How to read this report</h3>
+   <p class="small">The success score (0–100) blends five factors: rent & lease burden (25%), cash runway (25%), profitability and break-even cushion (20%), market & location strength (15%), and owner & compliance readiness (15%). Rent is judged against sector comfort and danger limits and against the size of your lease commitment relative to your funds. Cash runway uses a 36-month simulation with ramp-up and seasonality; the downside case assumes sales −20% and rent +10%. Benchmarks for sectors and location tiers are adjustable defaults set by your consultant and should be calibrated with local market data.</p>
+   <p class="small"><b>Important:</b> This tool is decision support built on the figures you entered. It is not financial, legal or investment advice, does not guarantee any outcome, and the failure-risk percentages are indicative only. Verify lease terms, licensing and regulations with qualified professionals and the relevant authorities before committing funds.</p></div>
+
+  <div class="rep-foot"><span><b style="font-family:var(--serif);font-size:.95rem;color:var(--g9)">Creed-to-Commerce™</b> · The Balanced Middle Path Academy, LLC (BMPA)</span><span>Confidential — prepared for ${esc(a.ownerName || 'client')} · Generated ${dtstr(new Date().toISOString())}</span></div>
+  </div>`;
+}
+function drawCharts() { const el = $('#cashchart'); if (el && S.curRes) cashChart(el, S.curRes); }
+let rzT; addEventListener('resize', () => { clearTimeout(rzT); rzT = setTimeout(drawCharts, 120); });
+document.addEventListener('pointermove', e => { const t = e.target.closest && e.target.closest('[data-tip]'); const tip = $('#tip'); if (t) { tip.textContent = t.dataset.tip; tip.style.display = 'block'; tip.style.left = Math.min(innerWidth - 270, e.clientX + 14) + 'px'; tip.style.top = (e.clientY + 14) + 'px'; } else if (!e.target.closest || !e.target.closest('#cashchart')) tip.style.display = 'none'; });
+
+/* ================= Views ================= */
+const BRAND_FOOT = `<footer class="foot no-print"><div class="wrap"><b>Creed-to-Commerce™</b><br>The Balanced Middle Path Academy, LLC (BMPA) · Founder &amp; Principal Consultant: Professor Zaid Ansari<br>Decision-support tool only — not financial or legal advice. Your data stays in this browser, encrypted.</div></footer>`;
+const CONSENT = `<ul class="clean small">
+ <li><b>Stays on this device.</b> Everything you enter is encrypted (AES-256) and stored only in this browser. Nothing is transmitted to any server, and no analytics or trackers are used.</li>
+ <li><b>You control it.</b> You can edit any field, delete any assessment, export your data, or erase everything at any time. A staff member can see your assessments only if they sign in on this same device.</li>
+ <li><b>Minimal data.</b> Only business figures are needed. Personal identity numbers are never requested.</li>
+ <li><b>No recovery.</b> Your passcode cannot be recovered. If it is lost, an administrator can reset it, otherwise the data is permanently unreadable.</li>
+ <li><b>Indicative results.</b> Scores and failure-risk figures are estimates from the numbers you provide. They are not financial, legal or investment advice and guarantee nothing.</li></ul>`;
+
+function gateHTML() {
+  const head = `<div class="top"><div class="wrap"><span class="brand"><span class="mark">C2C</span><span><b>Creed-to-Commerce™</b><small>Madinah Viability Compass</small></span></span></div></div>`;
+  const wrapIn = inner => head + `<main id="main" tabindex="-1"><div class="gatewrap"><div class="basmala" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>${inner}</div></main>` + BRAND_FOOT;
+  const mem = Store.persistent() ? '' : `<div class="notice warn small" style="margin-top:12px"><b>Session-only mode:</b> this browser is blocking saved storage, so data will be lost when you close the tab. Open the app as a regular file or from your own web address to keep data.</div>`;
+  if (!window.crypto || !crypto.subtle) return wrapIn(`<div class="card"><h2>Secure browser needed</h2><p>This app needs encryption support (Web Crypto), which requires a modern browser opened from a secure address (https:// or a local file).</p></div>`);
+  if (!vault) {
+    if (S.gate === 'setup') return wrapIn(`<div class="card"><h2>Create the practice account</h2><p class="small muted">This first account is the Administrator (the consultant). You can add consultants and clients afterwards.</p>
+      <form data-form="setup" autocomplete="off"><div class="fields" style="grid-template-columns:1fr">
+      <div class="fld"><label class="lbl" for="s_name">Display name</label><input class="inp" id="s_name" required maxlength="60" placeholder="e.g. Professor Zaid Ansari"></div>
+      <div class="fld"><label class="lbl" for="s_user">Username</label><input class="inp" id="s_user" required maxlength="30" pattern="[A-Za-z0-9._\\-]{3,30}" autocomplete="off" placeholder="letters, numbers, . _ -"></div>
+      <div class="fld"><label class="lbl" for="s_pass">Passcode (10+ characters)</label><input class="inp" id="s_pass" type="password" required minlength="10" autocomplete="new-password"><div class="strength"><i id="s_str"></i></div><div class="help" id="s_strt">Use a long phrase with mixed characters.</div></div>
+      <div class="fld"><label class="lbl" for="s_pass2">Confirm passcode</label><input class="inp" id="s_pass2" type="password" required minlength="10" autocomplete="new-password"></div></div>
+      <div class="notice small" style="margin-top:12px">Write your passcode down somewhere safe. It cannot be recovered.</div>
+      <div class="row" style="margin-top:14px"><button class="btn primary" type="submit">Create encrypted vault</button></div></form></div>${mem}`);
+    return wrapIn(`<div class="card"><h2>Welcome</h2><p>Plan before you lease. This compass turns your rent, capital and sales assumptions into a clear success-to-failure forecast for businesses in Madinah.</p>
+      <h3 style="margin-top:14px">Privacy &amp; consent</h3>${CONSENT}
+      <label class="check"><input type="checkbox" id="c1"> I have read and understood how my data is stored and protected.</label>
+      <label class="check"><input type="checkbox" id="c2"> I understand results are indicative decision support, not professional advice.</label>
+      <button class="btn primary" data-act="consent" id="cbtn" disabled style="margin-top:8px">I agree — continue</button></div>${mem}`);
+  }
+  const th = readJSON(THROTTLE_KEY);
+  return wrapIn(`<div class="card"><h2>Sign in</h2><p class="small muted">Your vault is encrypted. Enter your username and passcode to unlock it.</p>
+    <form data-form="login" autocomplete="off"><div class="fields" style="grid-template-columns:1fr">
+    <div class="fld"><label class="lbl" for="l_user">Username</label><input class="inp" id="l_user" required autocomplete="username" autocapitalize="none" spellcheck="false"></div>
+    <div class="fld"><label class="lbl" for="l_pass">Passcode</label><input class="inp" id="l_pass" type="password" required autocomplete="current-password"></div></div>
+    <div id="l_err" class="small" style="color:var(--danger);min-height:1.3em;margin-top:8px" role="alert">${th && Date.now() < th.until ? 'Too many attempts — please wait before trying again.' : ''}</div>
+    <div class="row" style="margin-top:6px"><button class="btn primary" type="submit" id="l_btn">Unlock</button><button type="button" class="btn ghost sm right" data-act="eraseGate">Forgot passcode? Erase &amp; start over</button></div></form></div>${mem}`);
+}
+function consentUserHTML() {
+  return `<div class="wrap"><div class="card" style="max-width:640px;margin:0 auto"><h2>Before you begin</h2><p>Welcome, ${esc(S.user.name)}. Please review how your information is handled.</p>${CONSENT}
+  <label class="check"><input type="checkbox" id="c1"> I have read and understood this notice.</label>
+  <div class="row"><button class="btn primary" id="cbtn" data-act="consentUser" disabled>I agree</button><button class="btn ghost" data-act="lock">Decline &amp; sign out</button></div></div></div>`;
+}
+function shellHTML(inner) {
+  const v = S.view.name, cur = n => v === n ? 'aria-current="page"' : '';
+  return `<div class="top no-print"><div class="wrap"><a class="brand" href="#" data-act="nav" data-v="dash"><span class="mark">C2C</span><span><b>Creed-to-Commerce™</b><small>Madinah Viability Compass</small></span></a>
+   <nav class="main" aria-label="Main"><button data-act="nav" data-v="dash" ${cur('dash')}>Dashboard</button><button data-act="new">+ New assessment</button>
+   ${isStaff() ? `<button data-act="nav" data-v="bench" ${cur('bench')}>Benchmarks</button>` : ''}${isAdmin() ? `<button data-act="nav" data-v="team" ${cur('team')}>Team &amp; data</button>` : ''}
+   <button data-act="nav" data-v="privacy" ${cur('privacy')}>Privacy</button><button data-act="nav" data-v="account" ${cur('account')}>Account</button><button class="lock" data-act="lock">🔒 Lock</button></nav>
+   <div class="who">${esc(S.user.name)}<br><span class="role">${ROLE_LABEL[S.user.role]}</span></div></div></div>
+   ${Store.persistent() ? '' : '<div class="notice warn small no-print" style="border-radius:0">Session-only mode: browser storage is blocked, data will vanish when this tab closes.</div>'}
+   <main id="main" tabindex="-1"><div class="wrap">${inner}</div></main>${BRAND_FOOT}`;
+}
+const visible = () => S.data.assessments.filter(canSee).sort((a, b) => (b.updated || '').localeCompare(a.updated || ''));
+function dashHTML() {
+  const list = visible(), q = S.q.trim().toLowerCase();
+  const items = list.map(a => ({a, r: evaluate(a.inputs, S.data.settings)})).filter(x => !q || (x.a.inputs.bizName || '').toLowerCase().includes(q) || (x.a.ownerName || '').toLowerCase().includes(q));
+  const done = list.filter(a => !missing(a.inputs).length);
+  const avg = done.length ? done.reduce((s, a) => s + evaluate(a.inputs, S.data.settings).score, 0) / done.length : null;
+  const risky = done.filter(a => evaluate(a.inputs, S.data.settings).score < 50).length;
+  return `<div class="hero" style="margin-bottom:18px"><div class="basmala" lang="ar" dir="rtl" style="color:#e2bf62">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div><h1 style="margin-top:6px">Plan before you lease.</h1><p style="max-width:62ch">From creed to commerce: test your Madinah business idea against rent, cash and market realities, and see where it sits on the scale from <b>business failure</b> to <b>success</b> — before you sign anything.</p><div class="row"><button class="btn gold" data-act="new">Start a new assessment</button></div></div>
+  <div class="grid g3" style="margin-bottom:18px"><div class="kpi st-neutral"><div class="k">Assessments</div><div class="v">${list.length}</div><div class="s">${isStaff() ? 'All clients on this device' : 'Yours'}</div></div>
+  <div class="kpi st-neutral"><div class="k">Average success score</div><div class="v">${avg == null ? '—' : Math.round(avg)}</div><div class="s">Across completed assessments</div></div>
+  <div class="kpi ${risky ? 'st-bad' : 'st-neutral'}"><div class="k">At high risk (&lt;50)</div><div class="v">${risky}</div><div class="s">Need restructuring before signing</div></div></div>
+  <div class="row" style="margin-bottom:10px"><h2 style="margin:0">Assessments</h2><input class="inp right" style="max-width:260px" id="q" type="search" placeholder="Search by business or client" value="${esc(S.q)}" aria-label="Search assessments"></div>
+  ${items.length ? `<div class="grid g2">${items.map(({a, r}) => { const inc = missing(a.inputs).length; return `<div class="card"><div class="row"><div><h3 style="margin:0">${esc(a.inputs.bizName || 'Untitled business')}</h3><div class="small muted">${esc(r.sec.name)}<br>${isStaff() ? esc(a.ownerName || '') + ' · ' : ''}Updated ${dstr(a.updated)}</div></div>
+  <div class="right center">${inc ? '<span class="chip">Draft</span>' : `<div class="chip" style="--b:${bcol(r.band)}">${r.band.ico} ${Math.round(r.score)}</div><div class="tiny muted" style="margin-top:3px">${r.band.label}</div>`}</div></div>
+  ${inc ? `<div class="bar" style="margin:10px 0"><i style="width:${Math.round(completeness(a.inputs) * 100)}%"></i></div><div class="tiny muted">${Math.round(completeness(a.inputs) * 100)}% complete</div>` : scaleHTML(r.score, {compact: true})}
+  <div class="row" style="margin-top:10px">${inc ? '' : `<button class="btn primary sm" data-act="open" data-id="${a.id}">View report</button>`}<button class="btn ghost sm" data-act="edit" data-id="${a.id}">Edit</button><button class="btn ghost sm" data-act="dup" data-id="${a.id}">Duplicate</button><button class="btn ghost sm right" style="color:var(--danger)" data-act="del" data-id="${a.id}">Delete</button></div></div>`; }).join('')}</div>`
+  : `<div class="card center" style="padding:36px"><h3>${list.length ? 'No matches' : 'No assessments yet'}</h3><p class="muted">${list.length ? 'Try a different search.' : 'Create your first assessment to see how your business plan scores.'}</p>${list.length ? '' : '<button class="btn primary" data-act="new">New assessment</button> <button class="btn ghost" data-act="sample">Try with sample data</button>'}</div>`}`;
+}
+function fieldHTML(f, val, st) {
+  const id = 'f_' + f.k, v = val ?? '';
+  let ctl;
+  if (f.t === 'sel') ctl = `<select class="inp" id="${id}" data-k="${f.k}">${f.opts(st).map(([k, l]) => `<option value="${esc(k)}" ${String(v) === String(k) ? 'selected' : ''}>${esc(l)}</option>`).join('')}</select>`;
+  else if (f.t === 'text') ctl = `<div class="numwrap"><input class="inp" style="padding-right:38px" id="${id}" data-k="${f.k}" type="text" maxlength="${f.max || 80}" value="${esc(v)}" autocomplete="off"><button type="button" class="clr" data-act="clear" data-k="${f.k}" aria-label="Clear ${esc(f.label)}" title="Clear this field">×</button></div>`;
+  else ctl = `<div class="numwrap"><input class="inp" id="${id}" data-k="${f.k}" type="number" inputmode="decimal" min="${f.min}" max="${f.max}" step="any" value="${esc(v)}" placeholder="—"><span class="unit">${esc(f.unit || '')}</span><button type="button" class="clr" data-act="clear" data-k="${f.k}" aria-label="Clear ${esc(f.label)}" title="Clear this field">×</button></div>`;
+  return `<div class="fld" data-fk="${f.k}"><label class="lbl" for="${id}">${esc(f.label)}${f.req ? ' <span style="color:var(--danger)" title="Required for the report">*</span>' : ''}</label>${ctl}${f.help ? `<div class="help">${esc(f.help)}</div>` : ''}<div class="err">Enter a value between ${fmt(f.min)} and ${fmt(f.max)}.</div></div>`;
+}
+function invalids(inp) { return ALL_FIELDS.filter(f => f.t === 'num' && has(inp[f.k]) && (parseFloat(inp[f.k]) < f.min || parseFloat(inp[f.k]) > f.max)); }
+function editorHTML() {
+  const d = S.draft, st = S.data.settings, sec = FIELDS[S.step], pc = Math.round(completeness(d.inputs) * 100);
+  return `<div class="row" style="margin-bottom:10px"><div><h2 style="margin:0">${S.draftNew ? 'New assessment' : 'Edit assessment'}</h2><div class="small muted">Enter your best estimates in SAR. You can edit or clear any field at any time.</div></div><button class="btn ghost sm right" data-act="sample">Fill with sample data</button></div>
+  <div class="steps" role="tablist">${FIELDS.map((s, i) => `<button data-act="step" data-n="${i}" ${i === S.step ? 'aria-current="step"' : ''}>${i + 1}. ${s.title}<i>${s.sub}</i></button>`).join('')}</div>
+  <div class="editor"><div class="card"><h3>${S.step + 1}. ${sec.title}</h3><div class="fields">${sec.fields.map(f => fieldHTML(f, d.inputs[f.k], st)).join('')}</div>
+    <div class="row" style="margin-top:18px"><button class="btn ghost sm" data-act="resetSec">Reset this section</button><span class="right row"><button class="btn ghost" data-act="step" data-n="${S.step - 1}" ${S.step === 0 ? 'disabled' : ''}>← Back</button>
+    ${S.step < FIELDS.length - 1 ? `<button class="btn primary" data-act="step" data-n="${S.step + 1}">Next →</button>` : `<button class="btn gold" data-act="saveView">Save &amp; see results</button>`}</span></div></div>
+   <aside class="live card" aria-label="Live preview"><div id="livepanel"></div><div class="row" style="margin-top:12px"><button class="btn primary sm" data-act="save">Save</button><button class="btn ghost sm" data-act="cancelEdit">Close</button></div></aside></div>`;
+}
+function livePanel() {
+  const d = S.draft, miss = missing(d.inputs), pc = Math.round(completeness(d.inputs) * 100);
+  const el = $('#livepanel'); if (!el) return;
+  if (miss.length) { el.innerHTML = `<h4>Live preview</h4><div class="bar"><i style="width:${pc}%"></i></div><p class="small muted" style="margin-top:6px">${pc}% complete. Still needed for a score: ${miss.map(k => esc(FDEF[k].label)).join('; ')}.</p>`; return; }
+  const r = evaluate(d.inputs, S.data.settings);
+  el.innerHTML = `<h4>Live preview</h4><div class="row"><div class="chip" style="--b:${bcol(r.band)}">${r.band.ico} ${r.band.label}</div><b style="font:700 1.8rem var(--serif)" class="right">${Math.round(r.score)}</b></div>${scaleHTML(r.score, {compact: true})}
+   <div class="small" style="margin-top:8px">Runway: <b>${r.base.runway >= 36 ? '36+' : r.base.runway} mo</b> · Rent ÷ sales: <b>${pct(r.base.rentRatio)}</b><br>Cash after upfront: <b>${sar(r.base.cash0)}</b></div><div class="bar" style="margin-top:8px"><i style="width:${pc}%"></i></div><div class="tiny muted">${pc}% complete</div>`;
+}
+function resultHTML() {
+  const a = S.data.assessments.find(x => x.id === S.view.id); if (!a || !canSee(a)) return '<div class="card">Assessment not found.</div>';
+  const res = evaluate(a.inputs, S.data.settings), lv = levers(a.inputs, S.data.settings, res); S.curRes = res; S.curA = a;
+  const w = S.whatif;
+  return `<div class="no-print"><div class="row" style="margin-bottom:12px"><button class="btn ghost sm" data-act="nav" data-v="dash">← Dashboard</button><span class="right row">
+   <button class="btn ghost sm" data-act="edit" data-id="${a.id}">Edit inputs</button><button class="btn primary sm" data-act="print">🖨 Save / print PDF</button><button class="btn ghost sm" data-act="dlhtml">Download report file</button></span></div>
+   <div class="tiny muted" style="margin:-4px 0 12px;text-align:right">In the print window choose “Save as PDF” as the destination to keep a copy.</div></div>
+  ${reportHTML(a, res, lv, {live: true})}
+  <div class="card no-print" style="margin-top:14px;border:2px solid var(--gold)"><h3>What-if sandbox</h3><p class="small muted">Slide to test a decision. Nothing is saved — your report above stays unchanged.</p>
+   <div class="grid g3">
+    <div><label class="lbl" for="w_rent">Rent change: <b id="w_rent_v">${w.rent > 0 ? '+' : ''}${w.rent}%</b></label><input class="slider" id="w_rent" data-w="rent" type="range" min="-40" max="40" step="5" value="${w.rent}"></div>
+    <div><label class="lbl" for="w_sales">Sales volume change: <b id="w_sales_v">${w.sales > 0 ? '+' : ''}${w.sales}%</b></label><input class="slider" id="w_sales" data-w="sales" type="range" min="-40" max="40" step="5" value="${w.sales}"></div>
+    <div><label class="lbl" for="w_funds">Extra reserve: <b id="w_funds_v">${sar(w.funds)}</b></label><input class="slider" id="w_funds" data-w="funds" type="range" min="0" max="300000" step="10000" value="${w.funds}"></div></div>
+   <div id="wi_out" style="margin-top:8px"></div></div>`;
+}
+function whatIf() {
+  const a = S.curA, res = S.curRes, w = S.whatif, el = $('#wi_out'); if (!el || !a) return;
+  const c = {...a.inputs}; c.rent = num(c.rent) * (1 + w.rent / 100); c.txnPerDay = num(c.txnPerDay) * (1 + w.sales / 100); c.funds = num(c.funds) + w.funds;
+  const r = evaluate(c, S.data.settings), d = r.score - res.score;
+  ['rent', 'sales'].forEach(k => { const e = $('#w_' + k + '_v'); if (e) e.textContent = (w[k] > 0 ? '+' : '') + w[k] + '%'; }); $('#w_funds_v').textContent = sar(w.funds);
+  el.innerHTML = `${scaleHTML(res.score, {alt: r.score})}<div class="row"><span class="chip" style="--b:${bcol(r.band)}">${r.band.ico} ${r.band.label}</span><span><b>${Math.round(r.score)}</b> <span style="color:${d >= 0 ? 'var(--b-thrive)' : 'var(--b-fail)'};font-weight:700">(${d >= 0 ? '+' : '−'}${Math.abs(d).toFixed(1)})</span> vs. ${Math.round(res.score)} now</span><span class="small muted">Runway ${r.base.runway >= 36 ? '36+' : r.base.runway} mo · Rent ÷ sales ${pct(r.base.rentRatio)} · Mature profit ${sar(r.base.aNet)}/mo</span></div><div class="tiny muted">Solid marker = saved result · dashed marker = your what-if.</div>`;
+}
+function benchHTML() {
+  const st = S.data.settings;
+  return `<h2>Benchmarks</h2><p class="muted small" style="max-width:70ch">These adjustable defaults drive how rent and location are judged. They are illustrative starting points — calibrate them with current Madinah market data for each neighbourhood.</p>
+  <div class="card"><h3>Rent-to-sales limits by sector</h3><div class="tablewrap"><table><thead><tr><th>Sector</th><th class="num">Comfort limit (%)</th><th class="num">Danger line (%)</th></tr></thead><tbody>${Object.entries(st.sectors).map(([k, s]) => `<tr><td>${esc(s.name)}</td><td class="num"><input class="inp" style="max-width:100px" type="number" step="0.5" min="1" max="90" data-bs="sectors.${k}.ok" value="${(s.ok * 100).toFixed(1)}"></td><td class="num"><input class="inp" style="max-width:100px" type="number" step="0.5" min="1" max="95" data-bs="sectors.${k}.bad" value="${(s.bad * 100).toFixed(1)}"></td></tr>`).join('')}</tbody></table></div></div>
+  <div class="card" style="margin-top:14px"><h3>Location tiers</h3><div class="tablewrap"><table><thead><tr><th>Tier</th><th>Name</th><th class="num">Footfall score (0–100)</th><th class="num">Relative rent index</th></tr></thead><tbody>${Object.entries(st.tiers).map(([k, t]) => `<tr><td><b>${k}</b></td><td><input class="inp" maxlength="70" data-bs="tiers.${k}.name" value="${esc(t.name)}"></td><td class="num"><input class="inp" style="max-width:100px" type="number" min="0" max="100" data-bs="tiers.${k}.traffic" value="${t.traffic}"></td><td class="num"><input class="inp" style="max-width:100px" type="number" min="0.1" max="5" step="0.05" data-bs="tiers.${k}.rentIndex" value="${t.rentIndex}"></td></tr>`).join('')}</tbody></table></div></div>
+  <div class="row" style="margin-top:14px"><button class="btn primary" data-act="bsave">Save benchmarks</button><button class="btn ghost" data-act="breset">Restore defaults</button></div>`;
+}
+function teamHTML() {
+  const rows = vault.users.map(u => ({...u, ...(S.data.users[u.id] || {name: '(unlinked)', role: '—'})}));
+  return `<h2>Team &amp; data</h2>
+  <div class="card"><h3>People with access</h3><div class="tablewrap"><table><thead><tr><th>Name</th><th>Username</th><th>Role</th><th>Added</th><th></th></tr></thead><tbody>${rows.map(u => `<tr><td>${esc(u.name)}${u.id === S.user.id ? ' <span class="tiny muted">(you)</span>' : ''}</td><td>${esc(u.uname)}</td><td>${u.id === S.user.id ? ROLE_LABEL[u.role] : `<select class="inp" style="max-width:150px" data-chg="role" data-id="${u.id}">${Object.entries(ROLE_LABEL).map(([k, l]) => `<option value="${k}" ${u.role === k ? 'selected' : ''}>${l}</option>`).join('')}</select>`}</td><td>${dstr(u.created)}</td><td class="num">${u.id === S.user.id ? '' : `<button class="btn ghost sm" data-act="resetpass" data-id="${u.id}">Reset passcode</button> <button class="btn ghost sm" style="color:var(--danger)" data-act="rmuser" data-id="${u.id}">Remove</button>`}</td></tr>`).join('')}</tbody></table></div></div>
+  <div class="card" style="margin-top:14px"><h3>Add a person</h3><form data-form="adduser" autocomplete="off"><div class="fields"><div class="fld"><label class="lbl" for="u_name">Display name</label><input class="inp" id="u_name" required maxlength="60"></div><div class="fld"><label class="lbl" for="u_user">Username</label><input class="inp" id="u_user" required pattern="[A-Za-z0-9._\\-]{3,30}" maxlength="30"></div>
+   <div class="fld"><label class="lbl" for="u_role">Role</label><select class="inp" id="u_role"><option value="client">Client — own assessments only</option><option value="consultant">Consultant — all assessments, benchmarks</option><option value="admin">Administrator — everything</option></select></div>
+   <div class="fld"><label class="lbl" for="u_pass">Temporary passcode (10+ chars)</label><div class="row" style="flex-wrap:nowrap"><input class="inp" id="u_pass" required minlength="10" type="text" autocomplete="off"><button type="button" class="btn ghost sm" data-act="gen">Generate</button></div><div class="help">Share it privately. The person should change it under Account.</div></div></div><div style="margin-top:12px"><button class="btn primary" type="submit">Add person</button></div></form></div>
+  <div class="card" style="margin-top:14px"><h3>Backup &amp; erase</h3><p class="small muted">Backups are encrypted — they open only with a valid passcode from this practice.</p><div class="row"><button class="btn ghost" data-act="backup">Download encrypted backup</button><label class="btn ghost" for="imp" style="cursor:pointer">Restore from backup…</label><input id="imp" type="file" accept=".json,application/json" class="sr"><button class="btn danger right" data-act="eraseAll">Erase everything</button></div></div>
+  <div class="card" style="margin-top:14px"><h3>Activity log</h3><div class="tablewrap" style="max-height:320px;overflow:auto"><table><thead><tr><th>When</th><th>Who</th><th>Event</th></tr></thead><tbody>${S.data.audit.slice(0, 120).map(e => `<tr><td>${dtstr(e.t)}</td><td>${esc(e.u)}</td><td>${esc(e.e)}</td></tr>`).join('')}</tbody></table></div></div>`;
+}
+function accountHTML() {
+  const p = prefs();
+  return `<h2>Account</h2><div class="grid g2"><div class="card"><h3>Change passcode</h3><form data-form="chpass" autocomplete="off"><div class="fld"><label class="lbl" for="a_old">Current passcode</label><input class="inp" id="a_old" type="password" required autocomplete="current-password"></div><div class="fld" style="margin-top:10px"><label class="lbl" for="a_new">New passcode (10+ chars)</label><input class="inp" id="a_new" type="password" required minlength="10" autocomplete="new-password"><div class="strength"><i id="s_str"></i></div></div><div style="margin-top:12px"><button class="btn primary" type="submit">Update passcode</button></div></form></div>
+  <div class="card"><h3>Session security</h3><label class="lbl" for="alock">Auto-lock after inactivity</label><select class="inp" id="alock" data-chg="alock">${[2, 5, 10, 15, 30].map(m => `<option value="${m}" ${p.autoLock === m ? 'selected' : ''}>${m} minutes</option>`).join('')}</select><p class="help">The vault locks and the decryption key is cleared from memory.</p></div>
+  <div class="card"><h3>Your data rights</h3><p class="small">Export a readable copy of your own assessments, or permanently delete them.</p><div class="row"><button class="btn ghost" data-act="exportmine">Export my data (JSON)</button><button class="btn danger" data-act="delmine">Delete all my assessments</button></div>${isAdmin() ? '' : '<div class="row" style="margin-top:10px"><button class="btn ghost" style="color:var(--danger)" data-act="delme">Delete my account &amp; data</button></div>'}</div></div>`;
+}
+function privacyHTML() {
+  return `<h2>Security &amp; customer protections</h2><div class="grid g2">
+  <div class="card"><h3>Protections built in</h3><ul class="clean small"><li><b>Encrypted at rest:</b> all assessments are sealed with AES-256-GCM; the key is wrapped by a key derived from each person’s passcode (PBKDF2, 310,000 rounds).</li><li><b>Local only:</b> no server, no tracking, no network requests — a strict content policy blocks outgoing connections.</li><li><b>Role-based permissions:</b> Clients see only their own work; Consultants see all assessments and edit benchmarks; Administrators manage people, backups and erasure. Roles are stored inside the encrypted vault so they cannot be altered from outside.</li><li><b>Brute-force slow-down:</b> repeated wrong passcodes trigger increasing lock-outs.</li><li><b>Auto-lock:</b> inactivity clears the key from memory; unsaved edits are kept encrypted.</li><li><b>Consent first:</b> every person accepts the privacy notice before using the app.</li><li><b>Activity log:</b> administrators can review sign-ins and changes.</li></ul></div>
+  <div class="card"><h3>Your rights</h3><ul class="clean small"><li><b>Edit</b> any field of any of your assessments, any time.</li><li><b>Delete</b> single assessments, all of your data, or your whole account.</li><li><b>Export</b> a readable copy of your data.</li><li><b>Data minimisation:</b> only business figures are requested — never ID numbers or bank details.</li><li><b>Plain-language results:</b> every score shows the factors behind it and a what-if sandbox so you can test decisions.</li></ul>
+  <div class="notice small" style="margin-top:12px"><b>Honest limits.</b> Protection depends on this device: use a strong passcode, keep the browser and device updated, and do not use shared computers without locking. Clearing browser data erases the vault — keep encrypted backups. These principles reflect good practice (consent, minimisation, erasure) in the spirit of personal-data laws such as Saudi Arabia’s PDPL, but the tool is not a legal certification of compliance.</div></div></div>`;
+}
+function viewHTML() {
+  switch (S.view.name) {
+    case 'edit': return editorHTML(); case 'result': return resultHTML(); case 'bench': return isStaff() ? benchHTML() : dashHTML();
+    case 'team': return isAdmin() ? teamHTML() : dashHTML(); case 'privacy': return privacyHTML(); case 'account': return accountHTML(); default: return dashHTML();
+  }
+}
+function render() {
+  const app = $('#app');
+  if (!S.master) { app.innerHTML = gateHTML(); document.title = 'Madinah Viability Compass · Creed-to-Commerce™'; return; }
+  app.innerHTML = !S.user.consentAt ? consentUserHTML() : shellHTML(viewHTML());
+  if (S.view.name === 'edit') livePanel();
+  if (S.view.name === 'result') { drawCharts(); whatIf(); }
+  const m = $('#main'); if (m && S.focusMain) { m.focus({preventScroll: true}); scrollTo(0, 0); S.focusMain = false; }
+}
+
+/* ================= Actions ================= */
+async function go(name, id) {
+  if (S.dirty && S.view.name === 'edit') { const ok = await ask({title: 'Discard unsaved changes?', body: '<p>You have edits that are not saved yet.</p>', ok: 'Discard', danger: true}); if (!ok) return false; S.dirty = false; S.draft = null; }
+  S.view = {name, id}; S.focusMain = true; render(); return true;
+}
+function startDraft(a, isNew) { S.draft = a; S.draftNew = isNew; S.dirty = false; S.step = 0; S.view = {name: 'edit', id: a.id}; S.focusMain = true; render(); }
+function newAssessment() { return {id: uid(), ownerId: S.user.id, ownerName: S.user.name, created: new Date().toISOString(), updated: new Date().toISOString(), inputs: blankInputs()}; }
+async function saveDraft(silent) {
+  const d = S.draft; if (!d) return false;
+  if (invalids(d.inputs).length) { if (!silent) toast('Please fix the highlighted fields before saving.', true); return false; }
+  d.updated = new Date().toISOString();
+  const i = S.data.assessments.findIndex(x => x.id === d.id);
+  if (i >= 0) { if (!canEdit(S.data.assessments[i])) { toast('You do not have permission to edit this assessment.', true); return false; } S.data.assessments[i] = structuredClone(d); } else S.data.assessments.push(structuredClone(d));
+  log((S.draftNew ? 'Created' : 'Edited') + ' assessment “' + (d.inputs.bizName || 'Untitled') + '”'); S.draftNew = false; S.dirty = false;
+  await persist(); if (!silent) toast('Saved and encrypted.'); return true;
+}
+const A = {
+  async nav(el) { await go(el.dataset.v); },
+  async new() { if (S.dirty && !(await go('dash'))) return; startDraft(newAssessment(), true); },
+  async sample() { if (!S.draft) { const a = newAssessment(); a.inputs = structuredClone(SAMPLE); startDraft(a, true); S.dirty = true; return; } const ok = await ask({title: 'Fill with sample data?', body: '<p>This replaces every field in this assessment with illustrative sample figures.</p>', ok: 'Replace'}); if (!ok) return; S.draft.inputs = structuredClone(SAMPLE); S.dirty = true; render(); },
+  async open(el) { S.whatif = {rent: 0, sales: 0, funds: 0}; const a = S.data.assessments.find(x => x.id === el.dataset.id); if (!a || !canSee(a)) return; log('Viewed report “' + (a.inputs.bizName || 'Untitled') + '”'); await go('result', a.id); },
+  async edit(el) { if (S.dirty && S.view.name === 'edit') { if (!(await go('dash'))) return; } const a = S.data.assessments.find(x => x.id === el.dataset.id); if (!a || !canEdit(a)) return toast('Not permitted.', true); startDraft(structuredClone(a), false); },
+  async dup(el) { const a = S.data.assessments.find(x => x.id === el.dataset.id); if (!a || !canSee(a)) return; const c = structuredClone(a); c.id = uid(); c.ownerId = S.user.id; c.ownerName = S.user.name; c.created = c.updated = new Date().toISOString(); c.inputs.bizName = (c.inputs.bizName || 'Untitled') + ' (copy)'; S.data.assessments.push(c); log('Duplicated assessment'); await persist(); render(); toast('Duplicated.'); },
+  async del(el) { const a = S.data.assessments.find(x => x.id === el.dataset.id); if (!a || !canEdit(a)) return toast('Not permitted.', true); const ok = await ask({title: 'Delete this assessment?', body: `<p><b>${esc(a.inputs.bizName || 'Untitled')}</b> will be permanently erased from this device. This cannot be undone.</p>`, ok: 'Delete permanently', danger: true}); if (!ok) return; S.data.assessments = S.data.assessments.filter(x => x.id !== a.id); log('Deleted assessment “' + (a.inputs.bizName || 'Untitled') + '”'); await persist(); if (S.view.name === 'result') S.view = {name: 'dash'}; render(); toast('Assessment deleted.'); },
+  clear(el) { const k = el.dataset.k, f = FDEF[k]; S.draft.inputs[k] = ''; const inp = $('#f_' + k); if (inp) { inp.value = ''; inp.focus(); } $(`[data-fk="${k}"]`)?.classList.remove('invalid'); S.dirty = true; livePanel(); },
+  async resetSec() { const ok = await ask({title: 'Reset this section?', body: '<p>All fields on this page return to their starting values.</p>', ok: 'Reset', danger: true}); if (!ok) return; const b = blankInputs(); FIELDS[S.step].fields.forEach(f => S.draft.inputs[f.k] = b[f.k]); S.dirty = true; render(); },
+  step(el) { const n = +el.dataset.n; if (n >= 0 && n < FIELDS.length) { S.step = n; render(); scrollTo({top: 0, behavior: 'smooth'}); } },
+  async save() { if (await saveDraft()) render(); },
+  async saveView() { const d = S.draft; if (!(await saveDraft())) return; const m = missing(d.inputs); if (m.length) { toast('Saved as a draft. Still needed: ' + m.map(k => FDEF[k].label).join('; '), true); S.view = {name: 'dash'}; render(); return; } S.whatif = {rent: 0, sales: 0, funds: 0}; S.draft = null; S.view = {name: 'result', id: d.id}; S.focusMain = true; render(); },
+  async cancelEdit() { await go('dash'); },
+  print() { const a = S.curA, t = document.title; document.title = `C2C-Viability-${slug(a.inputs.bizName)}-${new Date().toISOString().slice(0, 10)}`; log('Printed / saved PDF “' + (a.inputs.bizName || 'Untitled') + '”'); persist(); setTimeout(() => { window.print(); setTimeout(() => document.title = t, 800); }, 50); },
+  dlhtml() {
+    const a = S.curA, rep = $('#report').cloneNode(true); $$('.no-print', rep).forEach(n => n.remove()); $$('details', rep).forEach(d => d.setAttribute('open', ''));
+    const html = `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:"><title>Viability Report · ${esc(a.inputs.bizName || 'Untitled')}</title><style>${$('#css').textContent}</style></head><body class="standalone"><main><div class="wrap" style="padding-top:20px">${rep.outerHTML}</div></main></body></html>`;
+    download(`C2C-Viability-${slug(a.inputs.bizName)}.html`, html, 'text/html'); log('Downloaded report file'); persist(); toast('Report file downloaded. Open it and print to PDF any time.');
+  },
+  async lock() { await lockNow(); },
+  async consent() { S.gate = 'setup'; render(); },
+  async consentUser() { S.data.users[S.user.id].consentAt = S.user.consentAt = new Date().toISOString(); log('Accepted privacy notice'); await persist(); S.focusMain = true; render(); },
+  gen(el) { const c = 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789'; const r = crypto.getRandomValues(new Uint32Array(14)); $('#u_pass').value = [...r].map(x => c[x % c.length]).join('') + '#7'; },
+  async resetpass(el) { const u = vault.users.find(x => x.id === el.dataset.id), nm = S.data.users[u.id]?.name; const pw = await ask({title: 'Reset passcode', body: `<p>Set a new temporary passcode for <b>${esc(nm)}</b> (10+ characters). Share it privately.</p>`, ok: 'Reset', input: {type: 'text', ph: 'New passcode'}}); if (pw === null) return; if (String(pw).length < 10) return toast('Passcode must be at least 10 characters.', true); Object.assign(u, await wrapFor(S.master, pw)); log('Reset passcode for ' + nm); await persist(); toast('Passcode reset.'); },
+  async rmuser(el) { const id = el.dataset.id, nm = S.data.users[id]?.name; const ok = await ask({title: 'Remove this person?', body: `<p><b>${esc(nm)}</b> will lose access. Their assessments stay in the vault and remain visible to staff.</p>`, ok: 'Remove', danger: true}); if (!ok) return; vault.users = vault.users.filter(u => u.id !== id); delete S.data.users[id]; log('Removed user ' + nm); await persist(); render(); },
+  async backup() { download(`C2C-encrypted-backup-${new Date().toISOString().slice(0, 10)}.json`, JSON.stringify(vault), 'application/json'); log('Exported encrypted backup'); await persist(); toast('Encrypted backup downloaded.'); },
+  async eraseAll() { await eraseFlow(); }, async eraseGate() { await eraseFlow(); },
+  async exportmine() { const ok = await ask({title: 'Export readable copy?', body: '<p>The export file is <b>not encrypted</b>. Store it somewhere private.</p>', ok: 'Export'}); if (!ok) return; download(`my-C2C-assessments-${new Date().toISOString().slice(0, 10)}.json`, JSON.stringify(S.data.assessments.filter(a => a.ownerId === S.user.id), null, 2), 'application/json'); log('Exported own data'); await persist(); },
+  async delmine() { const mine = S.data.assessments.filter(a => a.ownerId === S.user.id); const ok = await ask({title: 'Delete all your assessments?', body: `<p>${mine.length} assessment(s) will be permanently erased.</p><p>Type <b>DELETE</b> to confirm.</p>`, ok: 'Delete all', danger: true, input: {match: 'DELETE', ph: 'DELETE'}}); if (!ok) return; S.data.assessments = S.data.assessments.filter(a => a.ownerId !== S.user.id); log('Deleted all own assessments'); await persist(); toast('Your assessments were deleted.'); },
+  async delme() { const ok = await ask({title: 'Delete your account and data?', body: '<p>Your login and all your assessments are permanently erased. Type <b>DELETE</b> to confirm.</p>', ok: 'Delete everything', danger: true, input: {match: 'DELETE', ph: 'DELETE'}}); if (!ok) return; const id = S.user.id; S.data.assessments = S.data.assessments.filter(a => a.ownerId !== id); vault.users = vault.users.filter(u => u.id !== id); delete S.data.users[id]; S.data.audit.unshift({t: new Date().toISOString(), u: S.user.name, e: 'Deleted own account'}); await persist(); await lockNow('Your account and data were deleted.'); },
+  async bsave() {
+    const st = structuredClone(S.data.settings); let bad = false;
+    $$('[data-bs]').forEach(inp => { const [grp, key, f] = inp.dataset.bs.split('.'); let v = inp.value; if (f === 'name') v = v.trim() || key; else { v = parseFloat(v); if (!isFinite(v)) { bad = true; return; } if (f === 'ok' || f === 'bad') v /= 100; } st[grp][key][f] = v; });
+    Object.values(st.sectors).forEach(s => { if (s.ok >= s.bad) bad = true; });
+    if (bad) return toast('Check values: comfort limits must be below danger lines and all fields numeric.', true);
+    S.data.settings = st; log('Edited benchmarks'); await persist(); toast('Benchmarks saved.');
+  },
+  async breset() { const ok = await ask({title: 'Restore default benchmarks?', ok: 'Restore', danger: true}); if (!ok) return; S.data.settings = structuredClone(DEFAULT_SETTINGS); log('Restored default benchmarks'); await persist(); render(); }
+};
+async function eraseFlow() {
+  const ok = await ask({title: 'Erase everything?', body: '<p>This permanently deletes the vault, every assessment, every account and the activity log from this browser. It cannot be undone. Type <b>ERASE</b> to confirm.</p>', ok: 'Erase permanently', danger: true, input: {match: 'ERASE', ph: 'ERASE'}});
+  if (!ok) return; Store.del(VAULT_KEY); Store.del(THROTTLE_KEY); vault = null; S.master = S.user = S.data = S.draft = null; S.gate = 'consent'; S.view = {name: 'dash'}; render(); toast('All data erased.');
+}
+document.addEventListener('click', e => {
+  const t = e.target.closest('[data-act]'); if (!t) return; if (t.tagName === 'A') e.preventDefault();
+  const fn = A[t.dataset.act]; if (fn) { try { const r = fn(t, e); if (r && r.catch) r.catch(err => { console.error(err); toast('Something went wrong: ' + err.message, true); }); } catch (err) { console.error(err); toast('Something went wrong.', true); } }
+});
+document.addEventListener('input', e => {
+  const t = e.target;
+  if (t.id === 'c1' || t.id === 'c2') { const b = $('#cbtn'); if (b) b.disabled = !(t.form ? true : ($('#c1')?.checked && ($('#c2') ? $('#c2').checked : true))); if (b) b.disabled = !($('#c1')?.checked && ($('#c2') ? $('#c2').checked : true)); return; }
+  if (t.id === 's_pass' || t.id === 'a_new') { const s = strength(t.value), el = $('#s_str'); if (el) { el.style.width = (s * 20) + '%'; el.style.background = s < 3 ? 'var(--b-fail)' : s < 4 ? 'var(--b-fragile)' : 'var(--b-thrive)'; } const tt = $('#s_strt'); if (tt) tt.textContent = ['Too weak', 'Too weak', 'Weak', 'Fair', 'Good', 'Strong'][s]; return; }
+  if (t.id === 'q') { S.q = t.value; const pos = t.selectionStart; render(); const q = $('#q'); q.focus(); q.setSelectionRange(pos, pos); return; }
+  if (t.dataset.w) { S.whatif[t.dataset.w] = +t.value; whatIf(); return; }
+  const k = t.dataset.k; if (k && S.draft) {
+    S.draft.inputs[k] = t.value; S.dirty = true; const f = FDEF[k], fld = t.closest('.fld');
+    if (f.t === 'num' && has(t.value)) { const n = parseFloat(t.value); fld.classList.toggle('invalid', n < f.min || n > f.max); } else fld.classList.remove('invalid');
+    clearTimeout(S.lt); S.lt = setTimeout(livePanel, 120);
+  }
+});
+document.addEventListener('change', async e => {
+  const t = e.target;
+  if (t.dataset.k && S.draft && t.tagName === 'SELECT') { S.draft.inputs[t.dataset.k] = t.value; S.dirty = true; livePanel(); }
+  if (t.dataset.chg === 'role') {
+    const id = t.dataset.id, role = t.value, admins = Object.values(S.data.users).filter(u => u.role === 'admin').length;
+    if (S.data.users[id].role === 'admin' && role !== 'admin' && admins <= 1) { toast('At least one administrator is required.', true); render(); return; }
+    S.data.users[id].role = role; log(`Changed role of ${S.data.users[id].name} to ${ROLE_LABEL[role]}`); await persist(); toast('Role updated.');
+  }
+  if (t.dataset.chg === 'alock') { Store.set(PREF_KEY, JSON.stringify({...prefs(), autoLock: +t.value})); toast('Auto-lock updated.'); }
+  if (t.id === 'imp' && t.files[0]) {
+    const f = t.files[0]; t.value = '';
+    try {
+      const txt = await f.text(); const v = JSON.parse(txt);
+      if (!v || v.v !== 1 || !Array.isArray(v.users) || !v.blob || !v.blob.ct || !v.users.every(u => u.id && u.uname && u.salt && u.iv && u.wrapped)) throw new Error('bad');
+      const ok = await ask({title: 'Replace all data with this backup?', body: '<p>Everything currently in this browser is overwritten and you will be signed out. Type <b>REPLACE</b> to confirm.</p>', ok: 'Replace', danger: true, input: {match: 'REPLACE', ph: 'REPLACE'}});
+      if (!ok) return; Store.set(VAULT_KEY, JSON.stringify(v)); vault = v; await lockNow('Backup restored. Sign in with a passcode from the backup.');
+    } catch (err) { toast('That file is not a valid backup.', true); }
+  }
+});
+document.addEventListener('submit', async e => {
+  const f = e.target.closest('[data-form]'); if (!f) return; e.preventDefault();
+  try {
+    if (f.dataset.form === 'setup') {
+      const name = $('#s_name').value.trim(), un = $('#s_user').value.trim(), p = $('#s_pass').value;
+      if (p !== $('#s_pass2').value) return toast('Passcodes do not match.', true);
+      if (strength(p) < 3) return toast('Choose a stronger passcode (longer, with mixed characters).', true);
+      $('button[type=submit]', f).disabled = true; await createVault(name, un, p); S.gate = 'login'; S.focusMain = true; render(); toast('Vault created. Welcome!');
+    } else if (f.dataset.form === 'login') {
+      const b = $('#l_btn'); b.disabled = true; b.textContent = 'Unlocking…';
+      try { await doLogin($('#l_user').value, $('#l_pass').value); S.view = {name: 'dash'}; S.focusMain = true; S.last = Date.now(); render(); }
+      catch (err) { $('#l_err').textContent = err.message; b.disabled = false; b.textContent = 'Unlock'; $('#l_pass').value = ''; $('#l_pass').focus(); }
+    } else if (f.dataset.form === 'adduser') {
+      const name = $('#u_name').value.trim(), un = $('#u_user').value.trim().toLowerCase(), role = $('#u_role').value, p = $('#u_pass').value;
+      if (vault.users.some(u => u.uname === un)) return toast('That username is already taken.', true);
+      if (p.length < 10) return toast('Passcode must be at least 10 characters.', true);
+      const id = uid(); const w = await wrapFor(S.master, p); vault.users.push({id, uname: un, ...w}); S.data.users[id] = {name, role, created: new Date().toISOString()};
+      log(`Added ${ROLE_LABEL[role]} ${name}`); await persist(); render(); toast(`${name} added. Share their temporary passcode privately.`);
+    } else if (f.dataset.form === 'chpass') {
+      const u = vault.users.find(x => x.id === S.user.id);
+      try { await unwrapWith(u, $('#a_old').value); } catch (err) { return toast('Current passcode is incorrect.', true); }
+      const np = $('#a_new').value; if (strength(np) < 3) return toast('Choose a stronger passcode.', true);
+      Object.assign(u, await wrapFor(S.master, np)); log('Changed own passcode'); await persist(); f.reset(); toast('Passcode updated.');
+    }
+  } catch (err) { console.error(err); toast('Something went wrong: ' + err.message, true); const b = $('button[type=submit]', f); if (b) b.disabled = false; }
+});
+addEventListener('beforeunload', e => { if (S.dirty) { e.preventDefault(); e.returnValue = ''; } });
+if (!vault) S.gate = 'consent';
+render();
+})();
+</script>
+</body>
+</html>
